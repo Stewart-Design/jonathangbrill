@@ -5,7 +5,7 @@ title: 'Jonathan G. Brill'
 module:
   hugoVersion:
     extended: true
-    min: 0.125
+    min: 0.116.0
   imports:
     - path: github.com/gohugoio/hugo-mod-bootstrap-scss/v5
 
