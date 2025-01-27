@@ -1,0 +1,27 @@
+{
+  "name": "jonathangbrill",
+  "version": "1.0.0",
+  "description": "Jonathan G. Brill Theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stewart-Design/jonathangbrill.git"
+  },
+  "author": "Adam Glenn",
+  "bugs": {
+    "url": "https://github.com/Stewart-Design/jonathangbrill/issues"
+  },
+  "homepage": "https://github.com/Stewart-Design/jonathangbrill#readme",
+  "dependencies": {
+    "micromatch": ">=4.0.8",
+    "@fullhuman/postcss-purgecss": "^6.0.0",
+    "postcss": "^8.4.39",
+    "postcss-cli": "^11.0.0"
+  },
+  "devDependencies": {
+    "micromatch": ">=4.0.8"
+  }
+}
