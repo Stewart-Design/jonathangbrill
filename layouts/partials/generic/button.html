@@ -1,0 +1,17 @@
+{{ $buttonText := "" }}
+{{ $url := "" }}
+{{ $size := "" }}
+
+{{ if .button_text }}
+  {{ $buttonText = .button_text }}
+{{ end }}
+
+{{ if .size }}
+  {{ $size = .size }}
+{{ end }}
+
+{{ if .url }}
+  {{ $url = .url }}
+{{ end }}
+
+<a href="{{ $url }}" class="{{ site.Params.defaultButtonClasses }} {{ $size }}" target="_blank">{{ $buttonText }}</a>

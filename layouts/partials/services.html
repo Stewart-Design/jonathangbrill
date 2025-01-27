@@ -1,0 +1,16 @@
+<section class="pt-6 pb-4 bg-white">
+  <div class="container mt-n10">
+    <div class="bg-white p-5">
+      <h2 class="mb-5 archivo-black-regular h1 jgb-bar">{{ .Params.services.heading }}</h2>
+      <ul class="row list-unstyled gx-1">
+        {{- with site.Data.settings.practice_areas_menu }}
+          {{- range . }}
+            <li class="nav-item col-lg-6 col-xl-4 d-flex flex-column">
+              <a class="text-start h-100 btn btn-outline-light nav-link text-dark border border-1 border-black-50 p-4 mb-1 d-flex align-items-start" href="{{ .url }}"><span class="fa-solid fa-{{ .icon }} me-2 fs-4"></span><span>{{ .menu_item }}</span></a>
+            </li>
+          {{- end }}
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</section>

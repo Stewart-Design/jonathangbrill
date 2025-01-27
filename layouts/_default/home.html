@@ -1,0 +1,30 @@
+{{ define "main" }}
+
+  {{ partial "components/hero" . }}
+
+  <section class="pt-7 pb-10 jgb-gradient-red">
+    <div class="container">
+      <div class="position-relative">
+        <h2 class="mb-5 h1 archivo-black-regular">{{ .Params.practice_areas.heading }}</h2>
+        <h3 class="small libre-baskerville-regular text-uppercase jgb-text-letter-spacing-wide mb-5 text-primary">{{ .Params.practice_areas.subheading }}</h3>
+        <div class="row gx-xl-6">
+          {{ range .Params.practice_areas.items }}
+            <div class="col-md-4">
+              {{ $icon := "" }}
+              {{ if .icon }}
+                {{ $icon = .icon }}
+              {{ end }}
+              <!-- <span class="fa-solid fa-{{ $icon }}"></span> -->
+              <h4 class="mb-3 archivo-black-regular jgb-bar">{{ .title }}</h4>
+              <p class="lh-lg libre-baskerville-regular">{{ .text }}</p>
+              <a class="stretched-link" href="{{ .url }}"><span class="visually-hidden">{{ .title }}</span></a>
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{ partial "services" . }}
+
+{{ end }}

@@ -1,0 +1,62 @@
+baseURL: 'https://example.org/'
+languageCode: 'en-us'
+title: 'Jonathan G. Brill'
+
+module:
+  hugoVersion:
+    extended: true
+    min: 0.125
+  imports:
+    - path: github.com/gohugoio/hugo-mod-bootstrap-scss/v5
+
+menus:
+  main:
+    - name: Home
+      identifier: home
+      pageRef: /
+      weight: 10
+    - name: About
+      identifier: about
+      pageRef: /about
+      weight: 20
+    - name: Practice Areas
+      identifier: practice-areas
+      pageRef: /personal-injury
+      weight: 30
+    - name: Blog
+      identifier: blog
+      pageRef: /blog
+      weight: 40
+    - name: Contact
+      identifier: contact
+      pageRef: /contact
+      weight: 50
+  services:
+    - name: Motor Vehicle Accidents
+      identifier: motor-vehicle-accidents
+      pageRef: /motor-vehicle-accidents
+      weight: 100
+    - name: Distracted Driving Accidents
+      identifier: distracted-driving-accidents
+      pageRef: /distracted-driving-accidents
+      weight: 110
+    - name: Workplace Accidents
+      identifier: workplace-accidents
+      pageRef: /workplace-accidents
+      weight: 120
+    - name: Slip-and-Fall Accidents
+      identifier: slip-and-fall-accidents
+      pageRef: /slip-and-fall-accidents
+      weight: 130
+    - name: Defective Products
+      identifier: defective-products
+      pageRef: /defective-products
+      weight: 140
+    - name: Serious Injury
+      identifier: serious-injury
+      pageRef: /serious-injury
+      weight: 150
+    - name: Wrongful Death
+      identifier: wrongful-death
+      pageRef: /wrongful-death
+      weight: 160

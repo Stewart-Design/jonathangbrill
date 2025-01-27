@@ -1,0 +1,74 @@
+{{ $page := . }}
+{{ with site.Data.footer }}
+  <footer>
+    <div class="pt-3 jgb-gradient-blue-red">
+      <div class="py-7 bg-dark text-white jgb-gradient-blue-top jgb-pattern-plus">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5 col-xl-4 me-md-auto">
+              <div class="bg-dark px-4 p-4 p-xl-5 mb-5">
+                <p class="lead libre-baskerville-bold jgb-bar--blue mb-0">{{ .contact_message }}</p>
+              </div>
+              <div class="bg-dark p-4 p-xl-5 mb-4">
+                <h2 class="h4 jgb-bar--blue archivo-black-regular mb-3">Contact Us</h2>
+                <address>
+                  <span class="d-block"><strong>{{ .address_first_line }}</strong></span>
+                  {{ range .address }}
+                    <span class="d-block">{{ . }}</span>
+                  {{ end }}
+                </address>
+                <ul class="list-unstyled">
+                  {{ range .phone }}
+                    <li><strong>{{ .label }}:</strong> <a class="text-jgb-blue" href="tel:{{ .number | urlize }}">{{ .number }}</a></li>
+                  {{ end }}
+                </ul>
+              </div>
+            </div>
+            {{ if ne $page.Title "Contact" }}
+              <div class="col-md-6">
+                <div class="bg-dark p-4 p-xl-5 mb-4">                
+                  <h2 class="mb-4 jgb-bar--blue archivo-black-regular">{{ .form_heading }}</h2>
+                  <p class="lead">{{ .form_intro }}</p>
+                  <p>{{ .form_instructions | markdownify }}</p>
+                  <form name="contact" action="/form-success" method="POST" data-netlify="true">
+                    <input type="hidden" name="subject" data-remove-prefix value="Contact inquiry from jonathangbrill.com" />
+                    <div class="mb-3">
+                      <label for="nameInput" class="form-label"><strong>Name</strong> <span class="text-danger"><sup>*</sup></span></label>
+                      <input name="name" type="text" class="form-control" id="nameInput" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="phoneInput" class="form-label"><strong>Phone</strong> <span class="text-danger"><sup>*</sup></span></label>
+                      <input name="phone" type="tel" class="form-control" id="phoneInput" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="emailInput" class="form-label"><strong>Email Address</strong> <span class="text-danger"><sup>*</sup></span></label>
+                      <input name="email" type="email" class="form-control" id="emailInput" required>
+                    </div>
+                    <div class="mb-3">
+                      <label for="orderInput" class="form-label"><strong>Message</strong> <span class="text-danger"><sup>*</sup></span></label>
+                      <textarea name="message" class="form-control" id="orderInput" rows="3" required></textarea>
+                    </div>
+                    <p>Disclaimer | Privacy Policy</p>
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label small" for="flexCheckDefault">
+                        I Have Read the Disclaimer *
+                      </label>
+                    </div>
+                    <button type="submit" class="btn btn-jgb-blue btn-lg jgb-glow-blue">Contact</button>
+                  </form>
+                </div>
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-dark text-light py-6">
+      <div class="container small opacity-50">
+        <p class="mb-1">&copy; 2025 Jonathan G. Brill, PLLC All Rights Reserved</p>
+        <p><a class="text-light" href="">Disclaimer</a> | <a class="text-light" href="">Site Map</a> | <a class="text-light" href="">Privacy Policy</a></p>
+      </div>
+    </div>
+  </footer>
+{{ end }}
