@@ -1,5 +1,5 @@
 ---
-title: 'Practice Areas'
+title: 'Practice areas'
 date: 2025-01-04T16:54:21-05:00
 draft: false
 content_blocks:

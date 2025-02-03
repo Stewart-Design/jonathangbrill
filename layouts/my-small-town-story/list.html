@@ -1,0 +1,35 @@
+{{ define "main" }}
+  <main id="topper" class="pt-6 pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 me-md-auto mb-5 mb-md-0">
+          <div class="jgb-main-content lh-lg mb-5">
+            {{ $title := .Title }}
+            {{ if .Params.alt_title }}
+              {{ $title = .Params.alt_title }}
+            {{ end }}
+            <h1 class="display-4 mb-5">{{ $title }}</h1>
+            <div class="">
+              {{ .Content }}
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          {{ $src := "" }}
+          {{ $alt := "" }}
+          {{ if .Params.sidebar_img }}
+            {{ if .Params.sidebar_img.alt }}
+              {{ $alt = .Params.sidebar_img.alt }}
+            {{ end }}
+            {{ if .Params.sidebar_img.src }}
+              {{ $src = resources.Get .Params.sidebar_img.src }}
+              <img class="img-fluid" loading="lazy" src='{{ ( $src.Fill "960x960 webp Center" ).RelPermalink }}' alt="{{ $alt }}" />
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </main>
+  {{ partial "components/attorneys" . }}
+  {{ partial "components/fighting" . }}
+{{ end }}

@@ -1,9 +1,10 @@
 {{ define "main" }}
-  <main class="pt-6 pb-7">
+  {{ partial "header.html" . }}
+  <main class="pt-6">
     <div class="container">
       <div class="row">
         <div class="col-md-7 me-md-auto mb-5 mb-md-0">
-          <div class="jgb-main-content lh-lg libre-baskerville-regular mb-5">
+          <div class="jgb-main-content mb-5">
             {{ .Content }}
           </div>
           <form name="contact" action="/form-success" method="POST" data-netlify="true">
@@ -31,7 +32,7 @@
                 I Have Read the Disclaimer *
               </label>
             </div>
-            <button type="submit" class="btn btn-jgb-blue btn-lg jgb-glow-blue">Contact</button>
+            <button type="submit" class="btn btn-red rounded-pill px-3">Contact</button>
           </form>
         </div>
         <div class="col-md-4">

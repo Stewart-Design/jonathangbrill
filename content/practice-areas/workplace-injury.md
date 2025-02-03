@@ -1,5 +1,8 @@
 ---
-title: Workplace Accidents
+title: Workplace Injury
+icon: user-injured
+description: >
+  You worked hard to build a life for your family, only to have it threatened by a workplace injury. Whether it's lost wages, mounting medical bills, or an uncertain future, we'll help you protect everything you've worked for and get back to providing for your people.
 lead: Working Hard For Injured Workplace Accident Victims In West Virginia
 ---
 

@@ -1,0 +1,29 @@
+{{ with .Params.brill_intro }}
+  <section class="py-6 text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-8 mx-xl-auto">
+          <h2 class="display-5 mb-4 poppins-regular"><strong>{{ .heading }}</strong></h2>
+          <div class="fs-5">
+            {{ .text | markdownify }}
+            {{ $src := "" }}
+            {{ $alt := "" }}
+            {{ if .signature }}
+              {{ if .signature.alt }}
+                {{ $alt = .signature.alt }}
+              {{ end }}
+              {{ if .signature.src }}
+                {{ $src = resources.Get .signature.src }}
+                <img class="img-fluid mt-3" loading="lazy" src='{{ $src.RelPermalink }}' alt="{{ $alt }}" />
+                <p class="h6 small text-red mb-5"><span class="small">{{ .signature.text }}</span></p>
+              {{ end }}
+            {{ end }}
+          </div>
+          {{ range .ctas }}
+            {{ partial "generic/button" (dict "button" . ) }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}

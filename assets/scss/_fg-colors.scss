@@ -3,6 +3,7 @@
 // Primary
 $jgb-red: #8f181b;
 $jgb-red-light: #ed1b20;
+$jgb-red-dark: #65130f;
 $jgb-blue: #54cbdb;
 
 $jgb-red-rgb: "143,24,27";
@@ -10,7 +11,9 @@ $jgb-red-light-rgb: "237,27,32";
 $jgb-blue-rgb: "84,203,219";
 
 $custom-colors: (
+  "white": #fff,
   "red": $jgb-red,
+  "red-dark": $jgb-red-dark,
   "red-light": $jgb-red-light,
   "jgb-blue": $jgb-blue
 );

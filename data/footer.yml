@@ -1,3 +1,5 @@
+background_image:
+  src: /img/footer-bg.webp
 intro: For an initial consultation with Jonathan G. Brill, PLLC, call locally or toll free — or reach our law office by email message.
 contact_title: Contact Us
 contact_message: For an initial consultation with Jonathan G. Brill, PLLC, call locally or toll free — or reach our law office by email message.
@@ -14,8 +16,8 @@ phone:
   - label: Fax
     number: 304-822-7109
 map_link:
-  - text: Romney Office
-    url: https://www.google.com/maps?q=Jonathan+G.+Brill,+PLLC+P.O.+Box+932+82+W+Main+St.+Romney+WV+26757
+  text: Romney Office
+  url: https://www.google.com/maps?q=Jonathan+G.+Brill,+PLLC+P.O.+Box+932+82+W+Main+St.+Romney+WV+26757
 form_heading: Contact the Firm
 form_intro: Free Consultations For Personal Injury Clients
 form_instructions: >

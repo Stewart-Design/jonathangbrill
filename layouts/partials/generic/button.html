@@ -1,17 +1,22 @@
-{{ $buttonText := "" }}
+{{ $text := "" }}
 {{ $url := "" }}
 {{ $size := "" }}
+{{ $classes := "btn-red" }}
 
-{{ if .button_text }}
-  {{ $buttonText = .button_text }}
+{{ if .button.text }}
+  {{ $text = .button.text }}
 {{ end }}
 
-{{ if .size }}
-  {{ $size = .size }}
+{{ if .button.size }}
+  {{ $size = .button.size }}
 {{ end }}
 
-{{ if .url }}
-  {{ $url = .url }}
+{{ if .button.url }}
+  {{ $url = .button.url }}
 {{ end }}
 
-<a href="{{ $url }}" class="{{ site.Params.defaultButtonClasses }} {{ $size }}" target="_blank">{{ $buttonText }}</a>
+{{ if .classes }}
+  {{ $classes = .classes }}
+{{ end }}
+
+<a href="{{ $url }}" class="btn {{ $classes }} {{ $size }} rounded-pill px-3" target="_blank">{{ $text }}</a>

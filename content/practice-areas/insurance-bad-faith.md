@@ -1,5 +1,8 @@
 ---
-title: Insurance Disputes / Coverage / Bad Faith
+title: Insurance Bad Faith
+icon: file-circle-xmark
+description: >
+  Big insurance companies count on you feeling powerless and alone. We've seen how they operate, and we won't let them take advantage of good people. When they act in bad faith, we're here to level the playing field and fight for what you deserve.
 lead: A West Virginia Injury Attorney Who Speaks Truth To The Power Of Insurance Companies
 ---
 

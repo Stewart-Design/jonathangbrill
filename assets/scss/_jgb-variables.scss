@@ -35,12 +35,38 @@ $display-font-sizes: (
   6: 2.5rem
 );
 
-$fg-bp-xs: 0 !default;
-$fg-bp-sm: 576px !default;
-$fg-bp-md: 768px !default;
-$fg-bp-lg: 992px !default;
-$fg-bp-xl: 1400px !default;
-$fg-bp-xxl: 1700px !default;
+$jgb-bp-xs: 0 !default;
+$jgb-bp-sm: 576px !default;
+$jgb-bp-md: 768px !default;
+$jgb-bp-lg: 992px !default;
+$jgb-bp-xl: 1400px !default;
+$jgb-bp-xxl: 1700px !default;
+
+$jbg-breakpoints: (
+  $jgb-bp-xs,
+  $jgb-bp-sm,
+  $jgb-bp-md,
+  $jgb-bp-lg,
+  $jgb-bp-xl,
+  $jgb-bp-xxl
+);
+
+$grid-breakpoints: (
+  xs: $jgb-bp-xs,
+  sm: $jgb-bp-sm,
+  md: $jgb-bp-md,
+  lg: $jgb-bp-lg,
+  xl: $jgb-bp-xl,
+  xxl: $jgb-bp-xxl
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
 
 $enable-negative-margins: true;
 

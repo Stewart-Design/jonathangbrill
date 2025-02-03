@@ -15,11 +15,11 @@
   column-count: 5 $global-important;
 }
 
-@each $bp-value, $breakpoint in (xs, $fg-bp-xs),
-                                (sm, $fg-bp-sm),
-                                (md, $fg-bp-md),
-                                (lg, $fg-bp-lg),
-                                (xl, $fg-bp-xl) {
+@each $bp-value, $breakpoint in (xs, $jgb-bp-xs),
+                                (sm, $jgb-bp-sm),
+                                (md, $jgb-bp-md),
+                                (lg, $jgb-bp-lg),
+                                (xl, $jgb-bp-xl) {
   @media (min-width: $breakpoint) {
     .fg-column-count-#{$bp-value}-1 {
       column-count: 1 $global-important;

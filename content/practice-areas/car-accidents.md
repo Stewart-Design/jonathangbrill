@@ -1,6 +1,8 @@
 ---
-title: Motor Vehicle Accidents
-lead: Experienced Representation That Protects The Rights Of Motor Vehicle Accident Victims In West Virginia
+title: Car Accidents
+icon: car-burst
+description: >
+  When a crash turns your life upside down, you need someone who understands what's really at stake. We help good people get back on their feet and back to the life they love - fighting insurance companies who try to push you around or pressure you into settling for less.
 ---
 
 A serious motor vehicle accident, truck accident, commercial vehicle accident or collision with a tractor and trailer often leaves families under financial strain, without a vehicle and dealing with medical bills.
