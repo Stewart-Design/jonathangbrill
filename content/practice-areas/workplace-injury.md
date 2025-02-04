@@ -4,6 +4,7 @@ icon: user-injured
 description: >
   You worked hard to build a life for your family, only to have it threatened by a workplace injury. Whether it's lost wages, mounting medical bills, or an uncertain future, we'll help you protect everything you've worked for and get back to providing for your people.
 lead: Working Hard For Injured Workplace Accident Victims In West Virginia
+draft: true
 ---
 
 Workplace accidents occur in many settings: constructions sites, warehouses, factories, manufacturing plants, offices and hospitals. After sustaining a serious injury, employers usually turn the case over to their insurance company, and the injured worker is left alone to struggle against an insurance defense lawyer, all the while battling lost income, financial hardship, medical bills, disability and emotional hardship.

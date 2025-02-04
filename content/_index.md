@@ -2,13 +2,13 @@
 title: 'Home'
 date: 2025-01-04T16:52:41-05:00
 draft: false
+type: splash
 hero:
-  heading: You’re the good people. I’m here to fight for you.
-  lead: >
-    When bad things happen to good people, they deserve someone who'll fight for them with everything they've got–a hometown lawyer who knows exactly what's at stake and won't stop until we make it right.
+  heading: New Site in Development
+  lead: Stay tuned for details.
   cta:
-    text: Share your story with me–it’s totally free.
-    url: /get-in-touch
+    text: Contact Us
+    url: "#footer"
   image:
     src: /img/courthouse.jpeg
     alt: Hampshire County Courthouse

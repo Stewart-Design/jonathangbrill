@@ -28,6 +28,7 @@ education:
       - "Major: Master of Public Administration"
 litigation_percentage: 75% of practice devoted to Litigation
 weight: 20
+draft: true
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus posuere consectetur arcu, vitae aliquam nulla convallis eget. Nunc id purus vitae felis gravida iaculis. Cras semper, arcu id bibendum pharetra, enim urna dignissim felis, quis accumsan sapien neque eu velit. In maximus eget mauris eget pretium.

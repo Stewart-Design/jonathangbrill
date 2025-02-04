@@ -4,6 +4,7 @@ icon: file-circle-xmark
 description: >
   Big insurance companies count on you feeling powerless and alone. We've seen how they operate, and we won't let them take advantage of good people. When they act in bad faith, we're here to level the playing field and fight for what you deserve.
 lead: A West Virginia Injury Attorney Who Speaks Truth To The Power Of Insurance Companies
+draft: true
 ---
 
 Insurance serves to protect us in times of financial catastrophe such as a car accident, house fire, destruction of property, theft and other losses. Unfortunately, disputes arise regarding coverage of the claim, and sometimes, insurance companies wrongfully refuse to pay the claim. Jonathan G. Brill, PLLC, has significant experience dealing with difficult insurance companies.
