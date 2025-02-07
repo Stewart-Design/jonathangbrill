@@ -4,8 +4,8 @@ date: 2025-01-04T16:52:41-05:00
 draft: false
 type: splash
 hero:
-  heading: New Site in Development
-  lead: Stay tuned for details.
+  heading: We are transitioning to a new website. Please stay tuned for details.
+  lead:
   cta:
     text: Contact Us
     url: "#footer"
