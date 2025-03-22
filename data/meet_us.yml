@@ -1,5 +1,5 @@
-title: 'Meet us'
-alt_title: 'My small town story'
+title: Meet us
+alt_title: My small town story
 date: 2025-01-04T16:52:41-05:00
 draft: false
 type: my-small-town-story
@@ -12,7 +12,10 @@ fighting:
     alt: Farmers standing in a field
   heading: Fighting For Good People
   text: >-
-    We're a small firm by choice, taking on fewer cases so we can fight harder for the people we serve. Based in Romney, West Virginia, we combine hometown heart with big-firm capabilities to help good people protect what they've worked so hard to build.
+    We're a small firm by choice, taking on fewer cases so we can fight harder
+    for the people we serve. Based in Romney, West Virginia, we combine hometown
+    heart with big-firm capabilities to help good people protect what they've
+    worked so hard to build.
 
       - Selective Focus: We accept only 10% of potential cases
       - All-In Investment: Average $100K invested per case
@@ -21,10 +24,12 @@ fighting:
       - Hometown Understanding: Deep roots in our community
   cta:
     text: Start building your case
-    url:
+    url: /get-in-touch
 content: >-
-  Life has a way of showing you what really matters. For me, that lesson came at 19 when I was yanked out of college at Fairmont State and sent to Afghanistan after 9/11.
-  
+  Life has a way of showing you what really matters. For me, that lesson came at
+  19 when I was yanked out of college at Fairmont State and sent to Afghanistan
+  after 9/11.
+
 
   Born and raised in Hampshire County, I grew up around the smartest, strongest, most hardworking people you'll ever meet – farmers, tradesmen, coal miners. Salt of the earth folks who built something real with their hands and their determination. But I never truly appreciated what I had until I left it.
 
