@@ -59,6 +59,8 @@ collections:
         editor:
           preview: false
         fields:
+          - {label: Background Image, name: background_image, widget: image, required: false}
+          - {label: Contact Message, name: contact_message, widget: text, required: false}
   - label: "Settings"
     name: "settings"
     create: false

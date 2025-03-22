@@ -3,7 +3,7 @@
 {{ partial "components/cta" . }}
 {{ with site.Data.footer }}
   {{ if .background_image }}
-    {{ $backgroundImage = resources.Get .background_image.src }}
+    {{ $backgroundImage = resources.Get .background_image }}
     {{ $backgroundImage = $backgroundImage.RelPermalink }}
   {{ end }}
   <footer id="footer">
@@ -11,9 +11,11 @@
       <div class="container">
         <div class="row">
           <div class="col-md-5 col-xl-4 me-md-auto mb-5 mb-xl-0">
-            <div class="">
-              <p class="lead mb-5">{{ .contact_message }}</p>
-            </div>
+            {{ if .contact_message }}
+              <div class="">
+                <p class="lead mb-5">{{ .contact_message }}</p>
+              </div>
+            {{ end }}
             <div class="mb-5">
               <h2 class="h4 mb-3">Contact Us</h2>
               <address>
