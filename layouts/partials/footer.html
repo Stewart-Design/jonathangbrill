@@ -1,5 +1,6 @@
 {{ $page := . }}
 {{ $backgroundImage := "" }}
+{{ partial "components/cta" . }}
 {{ with site.Data.footer }}
   {{ if .background_image }}
     {{ $backgroundImage = resources.Get .background_image.src }}

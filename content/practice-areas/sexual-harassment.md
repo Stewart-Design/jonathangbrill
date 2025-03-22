@@ -4,5 +4,4 @@ icon: octagon-xmark
 description: >
   Some wrongs demand to be made right. When you've been harassed or abused, you deserve someone who'll stand up and fight for your dignity with everything they've got. We're here to help you reclaim your power and ensure this never happens to anyone else.
 lead:
-draft: true
 ---

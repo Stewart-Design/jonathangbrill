@@ -1,7 +1,6 @@
 ---
 title: 'Why we fight'
 date: 2025-01-04T16:52:41-05:00
-draft: true
 type: why-we-fight
 profile:
   image:

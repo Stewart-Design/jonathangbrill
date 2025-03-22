@@ -1,4 +1,4 @@
-{{ with .Params.fighting }}
+{{ with .Site.Data.meet_us.fighting }}
   {{ $src := "" }}
   {{ $alt := "" }}
   <section class="" aria-labelledby="fighting-label">
@@ -18,9 +18,11 @@
         <div class="col-md-6">
           <h2 class="h1 mb-4">{{ .heading }}</h2>
           <div class="small">
-            <div class="mb-4">
-              {{ .text | markdownify }}
-            </div>
+            {{ if .text }}
+              <div class="mb-4">
+                {{ .text | markdownify }}
+              </div>
+            {{ end }}
             {{ partial "generic/button" (dict "button" .cta) }}
           </div>
         </div>

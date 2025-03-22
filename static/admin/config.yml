@@ -5,6 +5,42 @@ media_folder: assets/img
 public_folder: /img
 publish_mode: editorial_workflow
 collections:
+  - label: "Landing Pages"
+    name: "landingPages"
+    files:
+      - label: "Meet Us"
+        name: "meet-us"
+        file: "site/data/meet_us.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Alternate Title, name: alt_title, widget: string, required: false}
+          - {label: Draft, name: draft, widget: boolean}
+          - {label: Type, name: type, widget: hidden}
+          - label: Sidebar Image
+            name: sidebar_img
+            widget: object
+            fields:
+              - {label: SRC, name: src, widget: image, choose_url: false, required: false}
+              - {label: Alt Text, name: alt, widget: string, required: false}
+          - label: Fighting for Good People
+            name: fighting
+            widget: object
+            fields:
+              - label: Image
+                name: image
+                widget: object
+                fields:
+                  - {label: SRC, name: src, widget: image, choose_url: false, required: false}
+                  - {label: Alt Text, name: alt, widget: string, required: false}
+              - {label: Heading, name: heading, widget: string}
+              - {label: Text, name: text, widget: markdown}
+              - label: Call to Action
+                name: cta
+                widget: object
+                fields:
+                  - {label: Text, name: text, widget: string, required: false}
+                  - {label: URL, name: url, widget: string, required: false}
+          - {label: Content, name: content, widget: markdown}
   - label: "Footer"
     name: "footer"
     create: false

@@ -23,7 +23,6 @@ fighting:
   cta:
     text: Start building your case
     url:
-draft: true
 ---
 
 Life has a way of showing you what really matters. For me, that lesson came at 19 when I was yanked out of college at Fairmont State and sent to Afghanistan after 9/11.

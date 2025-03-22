@@ -5,7 +5,6 @@ draft: false
 content_blocks:
   - lead: >
       Personal And Professional Commitment To Victims Of Personal Injury In West Virginia
-draft: true
 ---
 
 Jonathan G. Brill is an experienced trial attorney representing victims of personal injury and those injured by the negligent actions of others. Regardless of the claim, Jonathan G. Brill does not get involved unless he feels an emotional connection to the case. His personal and career commitment to injured persons is the cornerstone of his law practice and the underlying reason for his reputation for positive results, which is recognized throughout the region.

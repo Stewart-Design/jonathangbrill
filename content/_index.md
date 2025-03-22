@@ -2,12 +2,12 @@
 title: 'Home'
 date: 2025-01-04T16:52:41-05:00
 draft: false
-type: splash
 hero:
-  heading: We are transitioning to a new website. Please stay tuned for details.
-  lead:
+  heading: You’re the good people. I’m here to fight for you.
+  lead: >-
+    When bad things happen to good people, they deserve someone who'll fight for them with everything they've got–a hometown lawyer who knows exactly what's at stake and won't stop until we make it right.
   cta:
-    text: Contact Us
+    text: Share your story with me–it’s totally free.
     url: "#footer"
   image:
     src: /img/courthouse.jpeg
