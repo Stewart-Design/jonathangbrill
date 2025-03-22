@@ -11,6 +11,7 @@ collections:
       - label: "Why We Fight"
         name: "why-we-fight"
         file: "site/data/why_we_fight.yml"
+        preview_path: why-we-fight
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Alternate Title, name: alt_title, widget: string, required: false}
