@@ -10,14 +10,14 @@ collections:
     files:
       - label: "Why We Fight"
         name: "why-we-fight"
-        file: "site/data/why_we_fight.yml"
-        preview_path: why-we-fight
+        file: "data/why_we_fight.yml"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Alternate Title, name: alt_title, widget: string, required: false}
       - label: "Meet Us"
         name: "meet-us"
-        file: "site/data/meet_us.yml"
+        file: "data/meet_us.yml"
+        preview_path: meet-us
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Alternate Title, name: alt_title, widget: string, required: false}
