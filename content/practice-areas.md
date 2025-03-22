@@ -1,6 +1,7 @@
 ---
 title: 'Practice areas'
 date: 2025-01-04T16:54:21-05:00
+type: practice-areas
 draft: false
 content_blocks:
   - lead: >
