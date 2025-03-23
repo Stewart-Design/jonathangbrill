@@ -19,16 +19,22 @@
             <div class="mb-5">
               <h2 class="h4 mb-3">Contact Us</h2>
               <address>
-                <span class="d-block"><strong>{{ .address_first_line }}</strong></span>
-                {{ range .address }}
-                  <span class="d-block">{{ . }}</span>
+                {{ if .address_first_line }}
+                  <span class="d-block"><strong>{{ .address_first_line }}</strong></span>
+                {{ end }}
+                {{ if .address }}
+                  {{ range .address }}
+                    <span class="d-block">{{ .text }}</span>
+                  {{ end }}
                 {{ end }}
               </address>
-              <ul class="list-unstyled">
-                {{ range .phone }}
-                  <li><strong>{{ .label }}:</strong> <a class="text-white" href="tel:{{ .number | urlize }}">{{ .number }}</a></li>
-                {{ end }}
-              </ul>
+              {{ if .phone }}
+                <ul class="list-unstyled">
+                  {{ range .phone }}
+                    <li><strong>{{ .label }}:</strong> <a class="text-white" href="tel:{{ .number | urlize }}">{{ .number }}</a></li>
+                  {{ end }}
+                </ul>
+              {{ end }}
             </div>
             {{ if .map_link }}
               {{ partial "generic/button" (dict "button" .map_link) }}
@@ -50,7 +56,13 @@
     <div class="bg-light py-6">
       <div class="container small">
         <p class="mb-1">&copy; {{ now.Year }} Jonathan G. Brill, PLLC All Rights Reserved</p>
-        <p><a class="" href="/disclaimer">Disclaimer</a> | <a class="" href="/privacy">Privacy Policy</a></p>
+        {{ if .links }}
+          <p>
+            {{ range $k, $_ := .links }}
+              {{ if $k }} | {{ end }}<a class="" href="{{ .url }}">{{ .text }}</a>
+            {{ end }}
+          </p>
+        {{ end }}
       </div>
     </div>
   </footer>

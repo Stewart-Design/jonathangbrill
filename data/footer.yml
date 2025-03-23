@@ -4,9 +4,9 @@ contact_title: Contact Us
 contact_message: For an initial consultation with Jonathan G. Brill, PLLC, call locally or toll free — or reach our law office by email message.
 address_first_line: Jonathan G. Brill, PLLC
 address:
-  - P.O. Box 932
-  - 332 E. Main St.
-  - Romney, WV 26757
+  - text: P.O. Box 932
+  - text: 332 E. Main St.
+  - text: Romney, WV 26757
 phone:
   - label: Toll Free
     number: 866-213-2824
@@ -24,7 +24,5 @@ form_instructions: >
 links:
   - text: Disclaimer
     url: /disclaimer
-  - text: Site Map
-    url: /site-map
   - text: Privacy Policy
     url: /privacy

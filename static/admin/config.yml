@@ -354,7 +354,36 @@ collections:
           preview: false
         fields:
           - {label: Background Image, name: background_image, widget: image, required: false}
+          - {label: Contact Title, name: contact_title, widget: string}
           - {label: Contact Message, name: contact_message, widget: text, required: false}
+          - {label: Address 1st Line, name: address_first_line, widget: text, required: false}
+          - label: Address
+            name: address
+            widget: list
+            fields:
+              - {label: Text, name: text, widget: string}
+          - label: Phone
+            name: phone
+            widget: list
+            fields:
+              - {label: Label, name: label, widget: string}
+              - {label: Number, name: number, widget: string}
+          - label: Map Link
+            name: map_link
+            widget: object
+            fields:
+              - {label: Text, name: text, widget: string}
+              - {label: URL, name: url, widget: string}
+            required: false
+          - {label: Form Heading, name: form_heading, widget: string}
+          - {label: Form Intro, name: form_intro, widget: text, required: false}
+          - {label: Form Instructions, name: form_instructions, widget: string, required: false}
+          - label: Links
+            name: links
+            widget: list
+            fields:
+              - {label: Text, name: text, widget: string}
+              - {label: URL, name: url, widget: string}
   - label: "Settings"
     name: "settings"
     create: false
