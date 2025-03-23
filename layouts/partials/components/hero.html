@@ -1,4 +1,4 @@
-{{ with .Params.hero }}
+{{ with .Site.Data.home.hero }}
   <main id="topper" class="bg-red text-white overflow-hidden">
     <div class="container">
       <div class="row">
@@ -28,7 +28,6 @@
               {{ end }}
             {{ end }}
           </div>
-          
         </div>
       </div>
     </div>

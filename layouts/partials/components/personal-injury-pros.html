@@ -1,7 +1,9 @@
 {{ $injuryPages := where .Site.RegularPages "Section" "practice-areas" }}
 <section class="pt-7 bg-white text-center">
   <div class="container">
-    <h2 class="mb-5 text-center display-6">{{ .Params.services.heading }}</h2>
+    {{ with .Site.Data.home.services }}
+      <h2 class="mb-5 text-center display-6">{{ .heading }}</h2>
+    {{ end }}
     <div class="row gx-4">
       {{ range $injuryPages }}
         <div class="col-md-6 col-lg-4 mb-4">
