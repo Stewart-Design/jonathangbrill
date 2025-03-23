@@ -1,5 +1,6 @@
 ---
 title: Car Accidents
+meta_description:
 icon: car-burst
 description: >
   When a crash turns your life upside down, you need someone who understands what's really at stake. We help good people get back on their feet and back to the life they love - fighting insurance companies who try to push you around or pressure you into settling for less.

@@ -1,5 +1,6 @@
 ---
 title: Amanda W. Greene
+meta_description:
 image:
   src: /img/greene.webp
   alt:

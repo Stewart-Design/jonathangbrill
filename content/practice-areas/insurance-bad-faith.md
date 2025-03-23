@@ -1,5 +1,6 @@
 ---
 title: Insurance Bad Faith
+meta_description:
 icon: file-circle-xmark
 description: >
   Big insurance companies count on you feeling powerless and alone. We've seen how they operate, and we won't let them take advantage of good people. When they act in bad faith, we're here to level the playing field and fight for what you deserve.

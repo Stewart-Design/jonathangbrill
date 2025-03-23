@@ -1,5 +1,6 @@
 ---
 title: Wrongful Death
+meta_description:
 icon: tombstone-blank
 description: >
   No amount of money can make up for losing someone you love. But when tragedy strikes because of someone else's negligence, your family deserves justice and accountability. We'll stand beside you with unwavering support through this difficult fight.

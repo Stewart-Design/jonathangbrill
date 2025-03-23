@@ -1,6 +1,7 @@
 ---
 title: It’s the Drive of West Virginia
 draft: true
+meta_description:
 date: 2018-06-20T16:54:21-05:00
 ---
 155 years and 60 days ago to this date, Abraham Lincoln signed a proclamation giving birth to what Owen Schmitt would later dub “the greatest state in the Nation.” And today’s her birthday. While wholeheartedly agreeing with Schmitt’s sentiments, I remain intrigued, astonished, and amazed, on a daily basis, by the attributes of West Virginians that make her the greatest state in the nation.

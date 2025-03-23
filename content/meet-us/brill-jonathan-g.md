@@ -1,5 +1,6 @@
 ---
 title: Jonathan G. Brill
+meta_description:
 image:
   src: /img/brill.webp
   alt:
