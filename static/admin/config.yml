@@ -356,7 +356,7 @@ collections:
           - {label: Background Image, name: background_image, widget: image, required: false}
           - {label: Contact Title, name: contact_title, widget: string}
           - {label: Contact Message, name: contact_message, widget: text, required: false}
-          - {label: Address 1st Line, name: address_first_line, widget: text, required: false}
+          - {label: Address 1st Line, name: address_first_line, widget: string, required: false}
           - label: Address
             name: address
             widget: list
