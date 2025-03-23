@@ -1,20 +1,22 @@
 {{ define "main" }}
-  {{ partial "header.html" . }}
-  <main class="pt-6">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-7 me-md-auto jgb-main-content lh-lg mb-5 mb-md-0">
-          {{ with .Params.lead }}
-            <div class="h2 mb-4">
-              <p>{{ . }}</p>
-            </div>
-          {{ end }}
-          {{ .Page.Content }}
-        </div>
-        <div class="col-md-4">
-          {{ partial "section-menu" . }}
+  {{ with .Site.Data.practice_areas }}
+    {{ partial "header.html" (dict "title" .title "alt_title" .alt_title) }}
+    <main class="pt-6">
+      <div class="container">
+        <div class="row">          
+          <div class="col-md-7 me-md-auto jgb-main-content lh-lg mb-5 mb-md-0">
+            {{ with .lead }}
+              <div class="h2 mb-4">
+                <p>{{ . }}</p>
+              </div>
+            {{ end }}
+            {{ .content | markdownify }}
+          </div>
+          <div class="col-md-4">
+            {{ partial "section-menu" }}
+          </div>
         </div>
       </div>
-    </div>
-  </main>
+    </main>
+  {{ end }}
 {{ end }}

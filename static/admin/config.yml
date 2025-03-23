@@ -17,18 +17,36 @@ collections:
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Alternate Title, name: alt_title, widget: string, required: false}
-      - label: "Meet Us"
-        name: "meet-us"
-        file: "data/meet_us.yml"
-        preview_path: meet-us
+      - label: "How We Help"
+        name: "how-we-help"
+        file: "data/how_we_help.yml"
         create: false
         editor:
           preview: false
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Alternate Title, name: alt_title, widget: string, required: false}
-          - {label: Draft, name: draft, widget: boolean}
-          - {label: Type, name: type, widget: hidden}
+          - {label: Content, name: content, widget: markdown}
+      - label: "Practice Areas"
+        name: "practice-areas"
+        file: "data/practice_areas.yml"
+        create: false
+        editor:
+          preview: false
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Alternate Title, name: alt_title, widget: string, required: false}
+          - {label: Lead, name: lead, widget: text, required: false}
+          - {label: Content, name: content, widget: markdown}
+      - label: "Meet Us"
+        name: "meet-us"
+        file: "data/meet_us.yml"
+        create: false
+        editor:
+          preview: false
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Alternate Title, name: alt_title, widget: string, required: false}
           - label: Sidebar Image
             name: sidebar_img
             widget: object
@@ -54,6 +72,19 @@ collections:
                   - {label: Text, name: text, widget: string, required: false}
                   - {label: URL, name: url, widget: string, required: false}
           - {label: Content, name: content, widget: markdown}
+  - label: "Blog"
+    name: "blog"
+    folder: "blog"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Draft", name: "draft", widget: "boolean"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "featured_image", widget: "image", required: false}
+      - {label: "Alt Text", name: "alt_text", widget: "string", required: false}
+      - {label: "Body", name: "body", widget: "markdown"}
   - label: "Footer"
     name: "footer"
     create: false

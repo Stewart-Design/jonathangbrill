@@ -7,4 +7,3 @@ content_blocks:
 type: contact
 ---
 
-While this website provides general information, it does not constitute legal advice. The best way to get guidance on your specific legal issue is to contact a lawyer. To schedule a meeting with an attorney, please call [304-822-7110](tel:3048227110) or complete the intake form below.

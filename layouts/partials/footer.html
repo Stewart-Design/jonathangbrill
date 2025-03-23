@@ -40,7 +40,7 @@
                 <h2 class="mb-4">{{ .form_heading }}</h2>
                 <p class="lead">{{ .form_intro }}</p>
                 <p>{{ .form_instructions | markdownify }}</p>
-                {{ partial "components/contact-form" . }}
+                {{ partial "components/contact-form" (dict "linkText" "text-white") }}
               </div>
             </div>
           {{ end }}

@@ -1,6 +1,6 @@
 {{ define "main" }}
-  {{ with .Site.Data.get_in_touch }}
-    {{ partial "header.html" (dict "title" .title "alt_title" .alt_title) }}
+  {{ with .Site.Data.how_we_help}}
+    {{ partial "header.html" {{ partial "header.html" (dict "title" .title "alt_title" .alt_title) }} }}
     <main class="pt-6">
       <div class="container">
         <div class="row">
@@ -8,7 +8,6 @@
             <div class="jgb-main-content mb-5">
               {{ .content | markdownify }}
             </div>
-            {{ partial "components/contact-form" (dict "linkText" "text-dark") }}
           </div>
           <div class="col-md-4">
             {{ partial "section-menu" }}
