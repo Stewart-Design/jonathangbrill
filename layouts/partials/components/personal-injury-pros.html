@@ -1,9 +1,9 @@
-{{ $injuryPages := site.GetPage "practice-areas" }}
+{{ $injuryPages := where .Site.RegularPages "Section" "practice-areas" }}
 <section class="pt-7 bg-white text-center">
   <div class="container">
     <h2 class="mb-5 text-center display-6">{{ .Params.services.heading }}</h2>
     <div class="row gx-4">
-      {{ range $injuryPages.Pages }}
+      {{ range $injuryPages }}
         <div class="col-md-6 col-lg-4 mb-4">
           <div class="bg-light p-4 p-lg-5 rounded-5 h-100">
             {{ if .Params.icon }}

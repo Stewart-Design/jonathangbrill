@@ -10,7 +10,7 @@
             {{ if .Params.image.alt }}
               {{ $alt = .Params.image.alt }}
             {{ end }}
-            {{ if .Params.image.src }}
+            {{ if and .Params.image .Params.image.src }}
               {{ $src = resources.Get .Params.image.src }}
               <img class="img-fluid" loading="lazy" src='{{ ( $src.Fill "960x960 webp Center" ).RelPermalink }}' alt="{{ $alt }}" />
             {{ end }}
@@ -21,8 +21,8 @@
           {{ if .Params.position }}
             <p class="fs-5"><em>{{ .Params.position }}</em></p>
           {{ end }}
-          <div class="lh-lg small">
-            {{ .Content }}
+          <div class="jgb-main-content lh-lg small">
+            {{ .Params.body | markdownify }}
           </div>
         </div>
       </div>

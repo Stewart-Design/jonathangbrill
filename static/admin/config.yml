@@ -8,7 +8,102 @@ collections:
   - label: "Landing Pages"
     name: "landingPages"
     files:
-      - label: "Why We Fight"
+      - label: "Home"
+        name: "home"
+        file: "data/home.yml"
+        create: false
+        editor:
+          preview: false
+        fields:
+          - {label: Title, name: title, widget: string}
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - {label: Heading, name: heading, widget: string}
+              - {label: Lead, name: lead, widget: text}
+              - label: Call to Action
+                name: ctas
+                widget: object
+                fields:
+                  - {label: Text, name: text, widget: string}
+                  - {label: URL, name: url, widget: string}
+              - label: Image
+                name: image
+                widget: object
+                fields:
+                  - {label: SRC, name: src, widget: image}
+                  - {label: Alt Text, name: alt, widget: string, required: false}
+                  - {label: Caption, name: caption, widget: text, required: false}
+          - label: Intro
+            name: brill_intro
+            widget: object
+            fields:
+              - {label: Heading, name: heading, widget: string}
+              - {label: Text, name: text, widget: markdown}
+              - label: Signature
+                name: signature
+                widget: object
+                fields:
+                  - {label: SRC, name: src, widget: image}
+                  - {label: Alt Text, name: alt, widget: string}
+                  - {label: Text, name: text, widget: string}
+              - label: CTAs
+                name: ctas
+                widget: list
+                fields:
+                  - {label: Text, name: text, widget: string}
+                  - {label: URL, name: url, widget: string}
+          - label: Testimonials
+            name: testimonials
+            widget: list
+            fields:
+              - {label: Quote, name: quote, widget: text}
+              - {label: Person, name: person, widget: string}
+              - {label: Label, name: label, widget: string}
+          - label: Factoids
+            name: factoids
+            widget: list
+            fields:
+              - {label: Icon, name: icon, widget: string}
+              - {label: Fact, name: fact, widget: string}
+              - {label: Text, name: text, widget: string}
+          - label: Services
+            name: services
+            widget: object
+            fields:
+              - {label: Heading, name: heading, widget: string}
+          - label: Good Fit
+            name: good_fit
+            widget: object
+            fields:
+              - {label: Heading, name: heading, widget: string}
+              - {label: Intro, name: intro, widget: text}
+              - label: Good
+                name: good
+                widget: object
+                fields:
+                  - label: Lists
+                    name: lists
+                    widget: list
+                    fields:
+                      - {label: Heading, name: heading, widget: string}
+                      - label: Items
+                        name: items
+                        widget: list
+              - label: Bad
+                name: bad
+                widget: object
+                fields:
+                  - label: Lists
+                    name: lists
+                    widget: list
+                    fields:
+                      - {label: Heading, name: heading, widget: string}
+                      - label: Items
+                        name: items
+                        widget: list
+      - label: "Why we fight"
         name: "why-we-fight"
         file: "data/why_we_fight.yml"
         create: false
@@ -17,7 +112,7 @@ collections:
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Alternate Title, name: alt_title, widget: string, required: false}
-      - label: "How We Help"
+      - label: "How we help"
         name: "how-we-help"
         file: "data/how_we_help.yml"
         create: false
@@ -27,7 +122,7 @@ collections:
           - {label: Title, name: title, widget: string}
           - {label: Alternate Title, name: alt_title, widget: string, required: false}
           - {label: Content, name: content, widget: markdown}
-      - label: "Practice Areas"
+      - label: "Practice areas"
         name: "practice-areas"
         file: "data/practice_areas.yml"
         create: false
@@ -38,7 +133,7 @@ collections:
           - {label: Alternate Title, name: alt_title, widget: string, required: false}
           - {label: Lead, name: lead, widget: text, required: false}
           - {label: Content, name: content, widget: markdown}
-      - label: "Meet Us"
+      - label: "Meet us"
         name: "meet-us"
         file: "data/meet_us.yml"
         create: false
@@ -72,6 +167,27 @@ collections:
                   - {label: Text, name: text, widget: string, required: false}
                   - {label: URL, name: url, widget: string, required: false}
           - {label: Content, name: content, widget: markdown}
+      - label: "Get in touch"
+        name: "meet-us"
+        file: "data/get_in_touch.yml"
+        create: false
+        editor:
+          preview: false
+        fields:
+          - {label: Intro, name: intro, widget: markdown, required: false}
+  - label: "Practice Areas"
+    name: "practice-areas"
+    folder: "content/practice-areas"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - {label: Title, name: title, widget: string}
+      - {label: Icon, name: icon, widget: string}
+      - {label: Description, name: description, widget: text}
+      - {label: Lead, name: lead, widget: text, required: false}
+      - {label: Body, name: body, widget: markdown}
+      - {label: Type, name: type, widget: hidden, default: "practice-areas"}
   - label: "Attorneys"
     name: "attorneys"
     folder: "content/meet-us"
@@ -108,6 +224,8 @@ collections:
             required: false
       - {label: Litigation Percentage, name: litigation_percentage, widget: string, required: false}
       - {label: Weight, name: weight, widget: number, value_type: int, min: 1, max: 100 }
+      - {label: Body, name: body, widget: markdown, required: false}
+      - {label: Type, name: type, widget: hidden, default: "attorney"}
   - label: "Blog"
     name: "blog"
     folder: "content/blog"
@@ -121,6 +239,7 @@ collections:
       - {label: "Featured Image", name: "featured_image", widget: "image", required: false}
       - {label: "Alt Text", name: "alt_text", widget: "string", required: false}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: Type, name: type, widget: hidden, default: "blog"}
   - label: "Footer"
     name: "footer"
     create: false
