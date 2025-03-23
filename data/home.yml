@@ -57,38 +57,38 @@ good_fit:
     lists:
       - heading: You want...
         items:
-          - Justice more than just a quick check
-          - Someone who’ll truly fight for you
-          - To get back to the life you love
-          - To make sure this never happens to others
+          - text: Justice more than just a quick check
+          - text: Someone who’ll truly fight for you
+          - text: To get back to the life you love
+          - text: To make sure this never happens to others
       - heading: You’re ready...
         items:
-          - To be involved in your case
-          - To share your full story
-          - To stand up for what’s right
-          - To trust the process
+          - text: To be involved in your case
+          - text: To share your full story
+          - text: To stand up for what’s right
+          - text: To trust the process
       - heading: Your case involves...
         items:
-          - Clear wrongdoing by someone else
-          - Real harm (physical, financial, emotional)
-          - Evidence to support your story
-          - Personal injury or insurance disputes
+          - text: Clear wrongdoing by someone else
+          - text: Real harm (physical, financial, emotional)
+          - text: Evidence to support your story
+          - text: Personal injury or insurance disputes
   bad:
     heading: We may not be the right fit if...
     lists:
       - heading: You’re looking for...
         items:
-          - Quick settlement at any cost
-          - Minimal personal involvement
-          - Overnight results
-          - Revenge above justice
+          - text: Quick settlement at any cost
+          - text: Minimal personal involvement
+          - text: Overnight results
+          - text: Revenge above justice
       - heading: You need help with...
         items:
-          - Family law (divorce, custody)
-          - Criminal defense
-          - Real estate matters
-          - Estate planning
-          - Collections
+          - text: Family law (divorce, custody)
+          - text: Criminal defense
+          - text: Real estate matters
+          - text: Estate planning
+          - text: Collections
 cta:
   text: Get the help you deserve.
   cta:

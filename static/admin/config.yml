@@ -91,6 +91,8 @@ collections:
                       - label: Items
                         name: items
                         widget: list
+                        fields:
+                          - {label: Text, name: text, widget: string, required: false}
               - label: Bad
                 name: bad
                 widget: object
@@ -103,6 +105,8 @@ collections:
                       - label: Items
                         name: items
                         widget: list
+                        fields:
+                        - {label: Text, name: text, widget: string, required: false}
       - label: "Why we fight"
         name: "why-we-fight"
         file: "data/why_we_fight.yml"
@@ -210,6 +214,8 @@ collections:
       - label: Areas of Practice
         name: areas_of_practice
         widget: list
+        fields:
+          - {label: Text, name: text, widget: string, required: false}
         required: false
       - {label: Bar Admission, name: bar_admission, widget: string, required: false}
       - label: Education
@@ -221,25 +227,27 @@ collections:
           - label: Items
             name: items
             widget: list
+            fields:
+              - {label: Text, name: text, widget: string, required: false}
             required: false
       - {label: Litigation Percentage, name: litigation_percentage, widget: string, required: false}
       - {label: Weight, name: weight, widget: number, value_type: int, min: 1, max: 100 }
       - {label: Body, name: body, widget: markdown, required: false}
       - {label: Type, name: type, widget: hidden, default: "attorney"}
-  - label: "Blog"
-    name: "blog"
-    folder: "content/blog"
-    create: true
-    editor:
-      preview: false
-    fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Draft", name: "draft", widget: "boolean"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Featured Image", name: "featured_image", widget: "image", required: false}
-      - {label: "Alt Text", name: "alt_text", widget: "string", required: false}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: Type, name: type, widget: hidden, default: "blog"}
+  # - label: "Blog"
+  #   name: "blog"
+  #   folder: "content/blog"
+  #   create: true
+  #   editor:
+  #     preview: false
+  #   fields:
+  #     - {label: "Title", name: "title", widget: "string"}
+  #     - {label: "Draft", name: "draft", widget: "boolean"}
+  #     - {label: "Publish Date", name: "date", widget: "datetime"}
+  #     - {label: "Featured Image", name: "featured_image", widget: "image", required: false}
+  #     - {label: "Alt Text", name: "alt_text", widget: "string", required: false}
+  #     - {label: "Body", name: "body", widget: "markdown"}
+  #     - {label: Type, name: type, widget: hidden, default: "blog"}
   - label: "Footer"
     name: "footer"
     create: false
