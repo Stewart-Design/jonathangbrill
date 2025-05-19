@@ -1,5 +1,5 @@
 {{ $order := "" }}
-{{ with .Site.Data.why_we_fight.alternating_grid }}
+{{ with .Site.Data.why_we_do_what_we_do.alternating_grid }}
   <section id="alternating-grid" aria-label="How We Help" class="pt-6">
     <div class="container">
       <div class="mt-n6">
@@ -26,8 +26,20 @@
                   {{ $alt = .image.alt }}
                 {{ end }}
                 {{ if .image.src }}
-                  {{ $src = resources.Get .image.src }}
-                  <img class="img-fluid" loading="lazy" src='{{ ( $src.Fill "960x640 webp Center" ).RelPermalink }}' alt="{{ $alt }}" />
+                  {{ $src := .image.src }}
+                  {{ $image := "" }}
+                  {{/*  Get the image, either from its remote or local source  */}}
+                  {{ if hasPrefix $src "http"}}
+                    {{ $image = resources.GetRemote $src }}
+                  {{ else }}
+                    {{ $image = resources.Get $src }}
+                  {{ end }}
+              
+                  {{/* Resize images and add them to a variable  */}}
+                  {{ if and $image (ne $image.MediaType.SubType "svg") }}
+                    {{ $src = ($image.Fill (printf "%dx%d webp" 960 640)).RelPermalink }}
+                  {{ end }}
+                  <img class="img-fluid" loading="lazy" src='{{ $src }}' alt="{{ $alt }}" />
                 {{ end }}
               {{ end }}
             </div>

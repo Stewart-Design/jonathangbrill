@@ -1,15 +1,15 @@
 {{ with .Site.Data.home.good_fit }}
-  <section class="pt-6 text-center">
+  <section aria-labelledby="fit-label" class="pt-6 text-center">
     <div class="container">
       <div class="row mb-5">
         <div class="col-xl-8 mx-xl-auto">
-          <h2 class="mb-4 display-6">{{ .heading }}</h2>
+          <h2 id="fit-label" class="mb-4 display-6">{{ .heading }}</h2>
           <p>{{ .intro }}</p>
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-6">
-          <div class="bg-light rounded-5 p-4 p-lg-5 h-100">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <div class="bg-light rounded-5 p-5 h-100">
             {{ with .good }}
               <h3>{{ .heading }}</h3>
               {{ range .lists }}
@@ -24,7 +24,7 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <div class="bg-light rounded-5 p-4 p-lg-5 h-100">
+          <div class="bg-light rounded-5 p-5 h-100">
             {{ with .bad }}
               <h3>{{ .heading }}</h3>
               {{ range .lists }}

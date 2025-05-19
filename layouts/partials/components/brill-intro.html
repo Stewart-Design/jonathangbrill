@@ -1,9 +1,9 @@
 {{ with .Site.Data.home.brill_intro }}
-  <section class="py-6 text-center">
+  <section aria-labelledby="intro-label" class="py-6 text-center">
     <div class="container">
       <div class="row">
         <div class="col-xl-8 mx-xl-auto">
-          <h2 class="display-5 mb-4 poppins-regular"><strong>{{ .heading }}</strong></h2>
+          <h2 id="intro-label" class="display-5 mb-4 poppins-regular"><strong>{{ .heading }}</strong></h2>
           <div class="fs-5">
             {{ .text | markdownify }}
             {{ $src := "" }}

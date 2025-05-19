@@ -5,18 +5,30 @@
       {{ $src := "" }}
       {{ $alt := "" }}
       <div class="row gx-5 mb-5">
-        <div class="col-lg-4 mb-4 mb-lg-0">
+        <div class="col-md-4 mb-4 mb-md-0">
           {{ if .Params.image }}
             {{ if .Params.image.alt }}
               {{ $alt = .Params.image.alt }}
             {{ end }}
             {{ if and .Params.image .Params.image.src }}
-              {{ $src = resources.Get .Params.image.src }}
-              <img class="img-fluid" loading="lazy" src='{{ ( $src.Fill "960x960 webp Center" ).RelPermalink }}' alt="{{ $alt }}" />
+              {{ $src = .Params.image.src }}
+              {{ $image := "" }}
+              {{/*  Get the image, either from its remote or local source  */}}
+              {{ if hasPrefix $src "http"}}
+                {{ $image = resources.GetRemote $src }}
+              {{ else }}
+                {{ $image = resources.Get $src }}
+              {{ end }}
+          
+              {{/* Resize images and add them to a variable  */}}
+              {{ if and $image (ne $image.MediaType.SubType "svg") }}
+                {{ $src = ($image.Fit (printf "%dx%d webp" 960 960)).RelPermalink }}
+              {{ end }}
+              <img class="img-fluid" loading="lazy" src='{{ $src }}' alt="{{ $alt }}" />
             {{ end }}
           {{ end }}
         </div>
-        <div class="col-lg-8">
+        <div class="col-md-8">
           <h2 class="h1">{{ .Title }}</h2>
           {{ if .Params.position }}
             <p class="fs-5"><em>{{ .Params.position }}</em></p>
@@ -24,6 +36,22 @@
           <div class="jgb-main-content lh-lg small">
             {{ .Params.body | markdownify }}
           </div>
+          {{ with .Params.education }}
+            <h2 class="mt-4">Education</h2>
+            <ul>
+              {{ range . }}
+                <li>{{ .school }}</li>
+              {{ end }}
+            </ul>
+          {{ end }}
+          {{ with .Params.areas_of_practice }}
+            <h2 class="mt-4">Practice Areas</h2>
+            <ul>
+              {{ range . }}
+                <li>{{ . }}</li>
+              {{ end }}
+            </ul>
+          {{ end }}
         </div>
       </div>
     {{ end }}

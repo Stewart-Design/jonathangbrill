@@ -57,14 +57,17 @@
 
 // Mixins
 @import 'mixins/jgb-bar';
+@import 'mixins/jgb-blend-mode';
 @import 'mixins/jgb-glow';
 @import 'mixins/jgb-patterns';
 
 // Utilities
 @import 'bootstrap/utilities/api';
+@import 'utilities/jgb-blend-mode';
 @import 'utilities/jgb-glow';
 @import 'utilities/jgb-patterns';
 @import 'utilities/jgb-extend-margin';
+@import 'utilities/jgb-z-index';
 
 // scss-docs-end import-stack
 

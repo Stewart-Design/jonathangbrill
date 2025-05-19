@@ -21,7 +21,7 @@ collections:
             name: hero
             widget: object
             fields:
-              - {label: Heading, name: heading, widget: string}
+              - {label: Heading, name: heading, widget: markdown}
               - {label: Lead, name: lead, widget: text}
               - label: Call to Action
                 name: cta
@@ -108,9 +108,9 @@ collections:
                         widget: list
                         fields:
                         - {label: Text, name: text, widget: string, required: false}
-      - label: "Why we fight"
+      - label: "Why we do what we do"
         name: "why-we-fight"
-        file: "data/why_we_fight.yml"
+        file: "data/why_we_do_what_we_do.yml"
         create: false
         editor:
           preview: false
@@ -223,6 +223,8 @@ collections:
           - {label: Title, name: title, widget: string}
           - {label: Alternate Title, name: alt_title, widget: string, required: false}
           - {label: Meta Description, name: meta_description, widget: text, required: false}
+          - {label: Hide from Subnav, name: hide_from_subnav, widget: boolean, required: false}
+          - {label: Weight, name: weight, widget: number, required: false}
           - {label: Lead, name: lead, widget: text, required: false}
           - {label: Content, name: content, widget: markdown}
       - label: "Meet us"

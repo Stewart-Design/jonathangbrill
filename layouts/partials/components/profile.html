@@ -1,4 +1,4 @@
-{{ with .Site.Data.why_we_fight.profile }}
+{{ with .Site.Data.why_we_do_what_we_do.profile }}
   <main id="topper" class="pt-6">
     <div class="container">
       <div class="row">
@@ -14,13 +14,23 @@
           </div>
         </div>
         <div class="col-lg-4 ms-lg-auto">
-          {{ $image := "" }}
+          
           {{ $alt := "" }}
-          {{ if and .image .image.src }}
-            {{ $image = resources.Get .image.src }}
-            {{ $image = $image.RelPermalink }}
+          {{ $src := .image.src }}
+          {{ $image := "" }}
+          {{/*  Get the image, either from its remote or local source  */}}
+          {{ if hasPrefix $src "http"}}
+            {{ $image = resources.GetRemote $src }}
+          {{ else }}
+            {{ $image = resources.Get $src }}
           {{ end }}
-          <img class="img-fluid" src="{{ $image }}" alt="{{ $alt }}" />
+      
+          {{/* Resize images and add them to a variable  */}}
+          {{ if and $image (ne $image.MediaType.SubType "svg") }}
+            {{ $src = ($image.Fit (printf "%dx%d webp" 640 960)).RelPermalink }}
+          {{ end }}
+          
+          <img class="img-fluid" src="{{ $src }}" alt="{{ .image.alt }}" />
         </div>
       </div>
     </div>

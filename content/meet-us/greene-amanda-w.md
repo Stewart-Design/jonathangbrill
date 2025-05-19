@@ -2,7 +2,7 @@
 title: Amanda W. Greene
 meta_description:
 image:
-  src: /img/greene.webp
+  src: /img/greene-amanda.jpg
   alt:
 position: Attorney
 location: Romney, WV
@@ -10,35 +10,22 @@ phone: (866) 213-2824
 fax: 304-822-7109
 email: amanda@jonathangbrill.com
 areas_of_practice:
-  - text: Litigation
-  - text: Criminal Law
-  - text: Real Estate Law
-  - text: Estate/Probate/Wills
-  - text: Family Law
 bar_admission: West Virginia, 2020
 education:
-  - school: West Virginia University College of Law
-    location: Morgantown, West
-    items:
-      - J.D. - 2020
-  - school: Lindenwood University
-    location: St. Charles, Missouri
-    items:
-      - text: M.B.A. & M.P.A.
-      - text: "Major: Master of Business Administration"
-      - text: "Major: Master of Public Administration"
-litigation_percentage: 75% of practice devoted to Litigation
 weight: 20
 body: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus posuere consectetur arcu, vitae aliquam nulla convallis eget. Nunc id purus vitae felis gravida iaculis. Cras semper, arcu id bibendum pharetra, enim urna dignissim felis, quis accumsan sapien neque eu velit. In maximus eget mauris eget pretium.
+  Born and raised in Romney, West Virginia, Amanda brings a strong sense of community, compassion, and hard work to her legal practice. A proud Hampshire High School graduate (Call of 2009), Amanda grew up in her family’s business, Wilson Lanes, where she learned the values of dedication and community. Her athletic talent in bowling took her to Lindenwood University in St. Charles, Missouri, on a scholarship, where she earned a Bachelor of Arts in Criminal Justice (legal studies emphasis), a Master of Business Administration (management emphasis), and a Master of Public Administration. While at Lindenwood, she completed internships with the United States Secret Service and the City of St. Charles Police Department. 
 
 
-  Praesent eget augue sit amet erat eleifend rutrum. Sed eget placerat leo, non egestas magna. Duis condimentum porttitor urna eget commodo. Cras justo lacus, convallis a urna sed, dapibus pretium sem. Suspendisse nibh sem, lacinia sed sollicitudin nec, aliquam eu orci.
+  After college, she returned home to Romney, juggling her pursuit of a professional bowling career with part-time work at Jonathan G Brill, PLLC, as a legal assistant. With encouragement and mentorship from Jonathan, she took the LSAT and was accepted into West Virginia University College of Law, where she earned her J.D. in 2020. She has been practicing with the firm ever since. 
 
 
-  In egestas laoreet purus, eu euismod massa scelerisque id. Nam in venenatis leo. Vivamus iaculis vel mauris dictum hendrerit. Donec magna diam, tempor a egestas vel, consequat at risus. Vivamus interdum quam in dapibus facilisis. Pellentesque vitae quam elit. Nam eu nisl in turpis vehicula semper. 
+  Outside the courtroom, Amanda is still passionate about bowling – having won two national titles on the Professional Women’s Bowling Tour. She was inducted into the Hampshire High School Athletic Hall of Fame in 2019 and the Lindenwood University Sports Hall of Fame in 2023. 
 
 
-  Sed semper purus elit, nec porttitor elit gravida eu. Morbi interdum faucibus rhoncus. Sed eleifend nulla risus, vestibulum tincidunt erat consequat ut. Nullam in enim dui. Nulla at nunc sit amet augue placerat accumsan. Cras vel egestas metus. Morbi at nisi ornare, placerat ante ut, hendrerit ligula.
+  She serves her community as Vice President of the Hampshire County Parks and Recreation, Treasurer of the Hampshire County Athletic Hall of Fame, and as a board member of the South Branch Valley Day Report Community Criminal Justice Board. 
+
+
+  Approachable, determined, and deeply rooted in the local community, Amanda is committed to helping others navigate the legal system with empathy and integrity. 
 type: attorney
 ---

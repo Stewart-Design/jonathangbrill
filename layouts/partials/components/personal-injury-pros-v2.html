@@ -1,0 +1,23 @@
+{{ with .Site.Data.home.services }}
+  <section aria-labelledby="serivces-label" class="pt-7 bg-white text-center">
+    <div class="container">
+      {{ with .heading }}
+        <h2 id="services-label" class="mb-5 text-center display-6">{{ . }}</h2>
+      {{ end }}
+      <div class="row gx-4">
+        {{ range .items }}
+          <div class="col-md-6 mb-4">
+            <div class="bg-light p-4 p-lg-5 rounded-5 h-100">
+              {{ with .icon }}
+                <span class="fa-sharp fa-{{ . }} display-3 text-red"></span>
+              {{ end }}
+              <h3 class="h2 mt-4">{{ .heading }}</h3>
+              <p class="small">{{ .text }}</p>
+              <p class="mb-0"><a href="{{ .url }}">Learn more</a></p>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+{{ end }}

@@ -1,14 +1,29 @@
 {{ $page := . }}
 {{ $backgroundImage := "" }}
 {{ partial "components/cta" . }}
+
 {{ with site.Data.footer }}
+
+  {{ $src := .background_image }}
+
   {{ if .background_image }}
-    {{ $backgroundImage = resources.Get .background_image }}
-    {{ $backgroundImage = $backgroundImage.RelPermalink }}
+    {{ $image := "" }}
+    {{/*  Get the image, either from its remote or local source  */}}
+    {{ if hasPrefix $src "http"}}
+      {{ $image = resources.GetRemote $src }}
+    {{ else }}
+      {{ $image = resources.Get $src }}
+    {{ end }}
+
+    {{/* Resize images and add them to a variable  */}}
+    {{ if and $image (ne $image.MediaType.SubType "svg") }}
+      {{ $src = ($image.Fit (printf "%dx%d webp" 1920 1080)).RelPermalink }}
+    {{ end }}
   {{ end }}
+
   <footer id="footer">
-    <div class="py-7 bg-dark text-white" style="background-image: url({{ $backgroundImage }}); background-position: center; background-size: cover;">
-      <div class="container">
+    <div class="py-7 bg-dark text-white jgb-bg-blend-mode-luminosity" style="background-image: url({{ $src }}); background-position: center; background-size: cover;">
+      <div class="container jgb-z-index-content">
         <div class="row">
           <div class="col-md-5 col-xl-4 me-md-auto mb-5 mb-xl-0">
             {{ if .contact_message }}

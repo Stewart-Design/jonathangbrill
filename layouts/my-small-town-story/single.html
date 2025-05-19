@@ -29,8 +29,20 @@
                 {{ $alt = .sidebar_img.alt }}
               {{ end }}
               {{ if .sidebar_img.src }}
-                {{ $src = resources.Get .sidebar_img.src }}
-                <img class="img-fluid" loading="lazy" src='{{ ( $src.Fill "960x960 webp Center" ).RelPermalink }}' alt="{{ $alt }}" />
+                {{ $src := .sidebar_img.src }}
+                {{ $image := "" }}
+                {{/*  Get the image, either from its remote or local source  */}}
+                {{ if hasPrefix $src "http"}}
+                  {{ $image = resources.GetRemote $src }}
+                {{ else }}
+                  {{ $image = resources.Get $src }}
+                {{ end }}
+            
+                {{/* Resize images and add them to a variable  */}}
+                {{ if and $image (ne $image.MediaType.SubType "svg") }}
+                  {{ $src = ($image.Fit (printf "%dx%d webp" 960 640)).RelPermalink }}
+                {{ end }}
+                <img class="img-fluid" loading="lazy" src='{{ $src }}' alt="{{ $alt }}" />
               {{ end }}
             {{ end }}
           </div>
