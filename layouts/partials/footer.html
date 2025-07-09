@@ -31,7 +31,7 @@
                 <p class="lead mb-5">{{ .contact_message }}</p>
               </div>
             {{ end }}
-            <div class="mb-5">
+            <div class="mb-4">
               <h2 class="h4 mb-3">Contact Us</h2>
               <address>
                 {{ if .address_first_line }}
@@ -53,6 +53,10 @@
             </div>
             {{ if .map_link }}
               {{ partial "generic/button" (dict "button" .map_link) }}
+            {{ end }}
+            <h2 class="h4 mt-5 mb-3">Follow Us</h2>
+            {{ range .social_media_accounts }}
+              <a href="{{ .url }}" class="text-decoration-none text-white me-2"><span class="fa-brands fa-{{ .icon }}"></span></a>
             {{ end }}
           </div>
           {{ if ne $page.Title "Get in touch" }}

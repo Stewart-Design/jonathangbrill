@@ -2,7 +2,7 @@
   <main id="topper" class="bg-red text-white overflow-hidden">
     <div class="container">
       <div class="row">
-        <div class="col-lg-7 mb-5 mb-lg-0">
+        <div class="col-xl-7 mb-5 mb-lg-0">
           <div class="py-8 my-3">
             <h1 class="display-4 mb-4">{{ .heading | markdownify }}</h1>
             <p class="mb-4 pb-2 lead">{{ .lead }}</p>
@@ -11,7 +11,7 @@
             {{ end }}
           </div>
         </div>
-        <div class="col-lg-4 ms-lg-auto d-none d-lg-block">
+        <div class="col-xl-4 ms-lg-auto d-none d-lg-block">
           <div class="w-100 h-100">
             {{ $alt := "" }}
             {{ if and .image .image.alt }}
@@ -36,7 +36,7 @@
               {{ end }}
 
               {{ if .image.caption }}
-                <div class="h-100 d-flex align-items-end jgb-lg-bleed-right" style="background-image: url({{ $src }}); background-size: cover; background-position: center;">
+                <div class="h-100 d-none d-xl-flex align-items-end jgb-xl-bleed-right position-relative" style="background-image: url({{ $src }}); background-size: cover; background-position: center;">
                   <p class="m-3 small">{{ .image.caption }}</p>
                 </div>
               {{ end }}
@@ -45,9 +45,9 @@
         </div>
       </div>
     </div>
-    <div class="d-lg-none position-relative">
+    <div class="d-xl-none position-relative">
       <p class="m-3 small position-absolute" style="bottom: 0px;">{{ .image.caption }}</p>
-      <img class="img-fluid" src="{{ $src }}" alt="{{ $alt }}" />
+      <img class="img-fluid w-100" src="{{ $src }}" alt="{{ $alt }}" />
     </div>
   </main>
 {{ end }}

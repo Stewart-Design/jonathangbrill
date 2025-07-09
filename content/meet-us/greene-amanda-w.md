@@ -6,7 +6,7 @@ image:
   alt:
 position: Attorney
 location: Romney, WV
-phone: (866) 213-2824
+phone: (304) 822-7110
 fax: 304-822-7109
 email: amanda@jonathangbrill.com
 areas_of_practice:

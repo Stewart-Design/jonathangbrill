@@ -8,7 +8,7 @@ hero:
     text: Share your story with us.
     url: "#footer"
   image:
-    src: /img/courthouse.jpeg
+    src: /img/IMG_4030-Edit.jpg
     alt: Hampshire County Courthouse
     caption: Proud to Practice in Hampshire County, WV
 brill_intro:
@@ -17,11 +17,11 @@ brill_intro:
     We focus on helping people who’ve been seriously injured – whether it’s from a truck wreck, car wreck, a dangerous property condition, or other injury. A lot of our clients are just regular folks trying to recover and get back to work, get back to supporting their families, but insurance companies don’t always treat them fairly. That’s where we come in. We walk with our clients every step of the way, handling the paperwork, the phone calls, and the fight – so that they can focus on healing. We don’t get paid unless we recover, and we work every case like it’s personal – because to our clients, it is. 
 
     
-    We pride ourselves on being from a small-town West Virginia and going toe-to-toe and winning against the biggest law firms. We protect everything you've worked so hard to build and get you back to the life you love.
+    We pride ourselves on being from small-town West Virginia and going toe-to-toe and winning against the biggest law firms. We protect everything you've worked so hard to build and get you back to the life you love.
   signature:
     src: /img/signature.webp
     alt: Jonathan G. Brill signature
-    text: Jonathan G. Brill, Principal Attorney
+    text: Jonathan G. Brill
   ctas:
     - text: Small town story
       url: /meet-us
@@ -32,8 +32,8 @@ testimonials:
     person: Jacques Williams, Partner
     label: Hamstead, Williams, and Shook
   - quote: He is very true to his word. HE LISTENS and treats his clients with much respect.
-    person: Type of Case Client
-    label: $XX,XXX Settlement
+    person: Former Client
+    label:
 factoids:
   - icon: shield-halved
     fact: 20 Years

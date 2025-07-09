@@ -3,27 +3,28 @@ $lg-width: 960px;
 $xl-width: 1140px;
 $xxl-width: 1320px;
 
-@media screen and (min-width: $jgb-bp-md) {
-  .jgb-bleed-left {
-    margin-left: calc((-100vw + #{$md-width}) / 2);
-    padding-left: calc((100vw - #{$md-width}) / 2);
-  }
-  .jgb-bleed-right {
-    margin-right: calc((-100vw + #{$md-width}) / 2 - .75rem);
-    padding-right: calc((100vw - #{$md-width}) / 2 + .75rem);
-  }
-}
+// @media screen and (min-width: $jgb-bp-md) {
+//   .jgb-bleed-left {
+//     margin-left: calc((-100vw + #{$md-width}) / 2);
+//     padding-left: calc((100vw - #{$md-width}) / 2);
+//   }
+//   .jgb-bleed-right {
+//     margin-right: calc((-100vw + #{$md-width}) / 2 - .75rem);
+//     padding-right: calc((100vw - #{$md-width}) / 2 + .75rem);
+//   }
+// }
 
-@media screen and (min-width: $jgb-bp-lg) {
-  .jgb-bleed-left {
-    margin-left: calc((-100vw + #{$lg-width}) / 2);
-    padding-left: calc((100vw - #{$lg-width}) / 2);
-  }
-  .jgb-bleed-right, .jgb-lg-bleed-right {
-    margin-right: calc((-100vw + #{$lg-width}) / 2 - .75rem);
-    padding-right: calc((100vw - #{$lg-width}) / 2 + .75rem);
-  }
-}
+// @media screen and (min-width: $jgb-bp-lg) {
+//   .jgb-bleed-left {
+//     margin-left: calc((-100vw + #{$lg-width}) / 2);
+//     padding-left: calc((100vw - #{$lg-width}) / 2);
+//   }
+//   .jgb-bleed-right, .jgb-lg-bleed-right {
+//     margin-right: calc((-100vw + #{$lg-width}) / 2 - .75rem);
+//     padding-right: calc((100vw - #{$lg-width}) / 2 + .75rem);
+//     background-position: calc((100vw - 320px) / 2 + .75rem) !important;
+//   }
+// }
 
 @media screen and (min-width: $jgb-bp-xl) {
   .jgb-bleed-left {
@@ -33,6 +34,7 @@ $xxl-width: 1320px;
   .jgb-bleed-right, .jgb-xl-bleed-right {
     margin-right: calc((-100vw + #{$xl-width}) / 2 - .75rem);
     padding-right: calc((100vw - #{$xl-width}) / 2 + .75rem);
+    // background-position: calc((100vw - 380px) / 2 - .75rem) !important;
   }
 }
 
@@ -44,5 +46,6 @@ $xxl-width: 1320px;
   .jgb-bleed-right, .jgb-xl-bleed-right {
     margin-right: calc((-100vw + #{$xxl-width}) / 2 - .75rem);
     padding-right: calc((100vw - #{$xxl-width}) / 2 + .75rem);
+    background-position: calc((100vw - 440px) / 2 - .75rem) !important;
   }
 }
