@@ -1,9 +1,9 @@
 title: 'Home'
 alt_title:
 hero:
-  heading: We fight for good people - _our_ people.
+  heading: We represent good people, _our_ people.
   lead: >-
-    We are injury lawyers from a small town in West Virginia, where we grew up around hardworking people who did whatever it took to support their families. They taught us grit, determination, and the importance of standing up for what’s right – values we bring to our law practice every day. When someone is hurt because of someone else’s wrong doing, they deserve a lawyer who will fight as hard for them as they would for their own family. That’s exactly what we do.
+    We are injury lawyers that bring a unique approach to helping people. We grew up around hardworking people who did whatever it took to support their families. Those people taught us grit, determination, and the importance of standing up for what's right - values we bring to our law practice every day. When someone is injured or mistreated, they deserve a lawyer who will work as hard for them as they would for their own family. That’s what we do. That’s what makes us unique.
   cta:
     text: Share your story with us.
     url: "#footer"
@@ -14,16 +14,16 @@ hero:
 brill_intro:
   heading: For us, it’s personal.
   text: >
-    We focus on helping people who’ve been seriously injured – whether it’s from a truck wreck, car wreck, a dangerous property condition, or other injury. A lot of our clients are just regular folks trying to recover and get back to work, get back to supporting their families, but insurance companies don’t always treat them fairly. That’s where we come in. We walk with our clients every step of the way, handling the paperwork, the phone calls, and the fight – so that they can focus on healing. We don’t get paid unless we recover, and we work every case like it’s personal – because to our clients, it is. 
+    We focus on helping people who’ve been seriously injured – whether it’s from a truck wreck, car wreck, a dangerous property condition, or other injury. A lot of our clients are just regular folks trying to recover and get back to work, get back to supporting their families, but insurance companies don’t always treat them fairly. That’s where we come in. We walk with our clients every step of the way – handling all aspects of the case so that they can focus on healing. We don’t get paid unless we recover, and we work every case like it’s personal – because to our clients, it is. 
 
     
-    We pride ourselves on being from small-town West Virginia and going toe-to-toe and winning against the biggest law firms. We protect everything you've worked so hard to build and get you back to the life you love.
+    We pride ourselves on being a boutique law firm from West Virginia and going toe-to-toe and winning against the biggest law firms in the country. We protect everything you've worked so hard to build and get you back to the life you love.
   signature:
     src: /img/signature.webp
     alt: Jonathan G. Brill signature
     text: Jonathan G. Brill
   ctas:
-    - text: Small town story
+    - text: Our story
       url: /meet-us
     - text: Why we do what we do
       url: /why-we-do-what-we-do
@@ -37,7 +37,7 @@ testimonials:
 factoids:
   - icon: shield-halved
     fact: 20 Years
-    text: Fighting for Small Town America
+    text: Working Hard for Our People
   - icon: family
     fact: 1,000+ Families
     text: Good People Helped Since 2010
@@ -109,3 +109,8 @@ good_fit:
           - text: Real estate closings
           - text: Estate planning
           - text: Landlord issues
+referrals:
+  heading: Attorney referrals
+  subheading: When the case matters, others lawyers call us. 
+  text: >-
+    We’re proud to be the firm other attorneys turn to when their clients need serious help. Whether they are looking for a trusted referral or a team to take the lead on a high-stakes case, we’re known for being straightforward, strategic, and committed to results. We treat every referral like a reflection of the lawyer who sent the case our way – and we work hard to make them proud that they called us. 

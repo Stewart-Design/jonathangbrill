@@ -1,11 +1,11 @@
 title: Meet us
-alt_title: Fighting the Good Fight for Good People
+alt_title: Our Story
 type: my-small-town-story
 sidebar_img:
   src: /img/outside-night.jpg
   alt: Outside view of law office
 content: >-
-  Life sure has a way of teaching hard lessons. For me, the journey started as 19. At the time, I was attending Fairmont State University. On September 11, 2001, my life, like most other Americans, changed dramatically. I was pulled out of Fairmont State University and sent with my Army unit to Bagram, Afghanistan. My time in the desert offered great reflection and perspective. 
+  Life sure has a way of teaching hard lessons. For me, the journey started at 19. At the time, I was attending Fairmont State University. On September 11, 2001, my life, like most other Americans, changed dramatically. I was pulled out of Fairmont State University and sent with my Army unit to Bagram, Afghanistan. My time in the desert offered great reflection and perspective. 
 
 
   I realized that, growing up in Hampshire County, I had grown up surrounded by the most compassionate, faithful, and hard-working people supporting their families and neighbors. Salt-of-the-earth people who supported their families and communities with calloused hands and pure grit. I didn't appreciate what I had until I left.
@@ -22,7 +22,7 @@ content: >-
 
   Today, we still treat our clients like family. We purposefully remain a small law firm because having direct connection to our clients is important to us. When someone's worked their whole life to build something and it's threatened – that's not just another case. That's our neighbor's life, their dignity, their future.
 fighting:
-  - heading: Fighting the Good Fight
+  - heading: Let’s get to work
     image:
       src: /img/brill-greene.jpg
       alt: Farmers standing in a field
@@ -40,8 +40,3 @@ fighting:
     cta:
       text: Start building your case
       url: /contact
-referrals:
-  heading: Attorney referrals
-  subheading: When the case matters, others lawyers call us. 
-  text: >-
-    We’re proud to be the firm other attorneys turn to when their clients need serious help. Whether they are looking for a trusted referral or a team to take the lead on a high-stakes case, we’re known for being straightforward, strategic, and committed to results. We treat every referral like a reflection of the lawyer who sent the case our way – and we work hard to make them proud that they called us. 

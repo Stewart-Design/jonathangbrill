@@ -5,7 +5,7 @@ profile:
     src: /img/brill-jonathan.jpg
     alt: Portrait of Jonathan G. Brill
   heading: >
-    Fighting the Good Fight
+    Our Purpose
   text: >
     We believe justice isn't just about the law – it's about seeing people for who they truly are, about standing up for folks who've been knocked down, about righting a wrong.
     
@@ -47,7 +47,7 @@ alternating_grid:
   - heading: Hometown Heart
     subheading: For us, it’s about our people
     text: >
-      We may be a small-town firm, but we're not a small fight. Where others just see another case, we see our neighbors and hardworking people that shaped the culture at our firm. We recognize the grit, determination, passion, and grace that make up West Virginians. We’ve seen the nature of West Virginians to fight for their beliefs and face challenges without fear or reservation. West Virginians expect the same grit, determination, and compassion when fighting a legal battle and dealing with the most traumatic event of their lives. It is the drive and attitude of West Virginians that motivate and move our practice forward. We understand exactly what's at stake when life deals our neighbors a bad hand. That's why we don't just handle cases – we live them. We've fought and won millions for the people and families across our great State. This isn't just business for us – it's personal.
+      We may be a small firm, but we are not a small fight. Where others just see another case, we see our neighbors and hardworking people that shaped the culture at our firm. We recognize the grit, determination, passion, and grace that make up West Virginians. We’ve seen the nature of West Virginians to fight for their beliefs and face challenges without fear or reservation. West Virginians expect the same grit, determination, and compassion when fighting a legal battle and dealing with the most traumatic event of their lives. It is the drive and attitude of West Virginians that motivate and move our practice forward. We understand exactly what's at stake when life deals our neighbors a bad hand. That's why we don't just handle cases – we live them. We've fought and won millions for the people and families across our great State. This isn't just business for us – it's personal.
     image:
       src: /img/farmers.webp
       alt: Two farmers on a ranch
@@ -95,7 +95,7 @@ good_fit:
       - Delegate to staff
       - Focus on quick profits
   list_b:
-    heading: We fight differently...
+    heading: We do it differently...
     items:
       - Always prep for a jury to decide your case
       - Selective and focused on personal injury
