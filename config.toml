@@ -1,6 +1,8 @@
-baseURL = 'https://examplesite.com/'
+baseURL = 'https://jonathangbrill.com/'
 languageCode = 'en-us'
 title = 'Jonathan G. Brill'
+
+enableRobotsTXT = true
 
 [module]
   [module.hugoVersion]
