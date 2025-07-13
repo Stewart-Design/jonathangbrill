@@ -1,0 +1,159 @@
+title: 'Why we do what we do'
+alt_title:
+profile:
+  image:
+    src: /img/brill-jonathan.jpg
+    alt: Portrait of Jonathan G. Brill
+  heading: >
+    Our Purpose
+  text: >
+    We believe justice isn't just about the law – it's about seeing people for who they truly are, about standing up for folks who've been knocked down, about righting a wrong.
+    
+
+    Growing up in Hampshire County, West Virginia, taught us what that really means. We've seen how hard people work to build something worth protecting, and how quickly life can try to take it all away. That's why we're here – fighting for our people.
+  cta:
+    text: Our story
+    url: /meet-us
+worth_it:
+  heading: You’re Worth Fighting For
+  mission:
+    heading: Mission
+    icon: bullseye-arrow
+    text: To help good people who've been dealt a bad hand through passion, preparation, and persistence.
+  vision:
+    heading: Vision
+    icon: eye
+    text: Everyone deserves to be taken seriously, not matter where they are from or what’s in their wallet. We don’t do halfway lawyering. We give our clients real attention, real effort, and real results. Because people deserve more than just someone to file paperwork – they deserve someone to stand up for them.
+  passion:
+    heading: Passion
+    icon: heart
+    text: >
+      We only take cases we believe in. Once we accept your case, we treat your case like it’s our family's fight.
+  preparation:
+    heading: Preparation
+    icon: magnifying-glass
+    text: >
+      We build every case for trial from day one, investing whatever it takes to win. We’ve worked hard to develop a reputation such that when opponents see our name, they know we are serious, that we will be prepared, and that we work tirelessly to see your case to victory.
+  persistence:
+    heading: Persistence
+    icon: handshake
+    text: >
+      We never back down. We’ve faced some of the biggest companies and battled against some of the most powerful interests, often against a whole team of lawyers on the other side. Through every obstacle, we stay committed until justice is served.
+quote:
+  text: “If you are not emotionally involved, your client is not getting your best effort.”
+  author: Joe Jamail
+  title: Famous trial lawyer dubbed the king of torts
+alternating_grid:
+  - heading: Hometown Heart
+    subheading: For us, it’s about our people
+    text: >
+      We may be a small firm, but we are not a small fight. Where others just see another case, we see our neighbors and hardworking people that shaped the culture at our firm. We recognize the grit, determination, passion, and grace that make up West Virginians. We’ve seen the nature of West Virginians to fight for their beliefs and face challenges without fear or reservation. West Virginians expect the same grit, determination, and compassion when fighting a legal battle and dealing with the most traumatic event of their lives. It is the drive and attitude of West Virginians that motivate and move our practice forward. We understand exactly what's at stake when life deals our neighbors a bad hand. That's why we don't just handle cases – we live them. We've fought and won millions for the people and families across our great State. This isn't just business for us – it's personal.
+    image:
+      src: /img/farmers.webp
+      alt: Two farmers on a ranch
+    cta:
+      text: I need some help
+      url: /contact
+  - heading: All In or Nothing
+    subheading: We don’t take every case – just the ones worth going all in.
+    text: >
+      We’re selective, not because we don’t care, but because we care too much to spread ourselves thin. When we take a case, we’re all in. That means focused time, strategy, and resources to get real results for our people.
+    image:
+      src: /img/meeting-room.jpg
+      alt: Row of law books
+    cta:
+      text: Start building your case
+      url: /contact
+  - heading: Passion, Not Process
+    subheading: There’s no such thing as lukewarm justice
+    text: >
+      Justice is more than legal know-how, it demands unwavering passion and the courage to stand up against powerful interests. We learned early on that half-hearted lawyering is worse than no lawyering at all. That's why we put our whole heart into every case. If we're not emotionally invested in your case, you're not getting our best work. We bring the same heart and work ethic to every case. Because this isn't about processing paperwork or checking boxes – it's real people with real lives who need help.
+    image:
+      src: /img/old-books.jpg
+      alt: People on overlook viewing a river
+    cta:
+      text: Help me make it right
+      url: /contact
+  - heading: Never Settle for Less
+    subheading: We prepare your case so you're never forced to settle
+    text: >
+      Most cases settle, that's just how it is. But we're always thinking *"What's a jury gonna think about this case?"* We prepare for court from day one. Our approach isn't just about being ready – it's about letting the other side know that we are always ready to let a jury decide your case. We invest unlimited resources into developing expert testimony, finding evidence, and preparing your case for Court. We don't want you to just settle for whatever the other side offers – we want you to win at any cost.
+    image:
+      src: /img/old-writing.jpg
+      alt: Hands on a book
+    cta:
+      text: Share your story with us.
+      url: /contact
+good_fit:
+  heading: We Do It Different
+  list_a:
+    heading: Many law firms...
+    items:
+      - Rush to settle
+      - Take every case that walks in
+      - Invest the bare minimum
+      - Delegate to staff
+      - Focus on quick profits
+  list_b:
+    heading: We do it differently...
+    items:
+      - Always prep for a jury to decide your case
+      - Selective and focused on personal injury
+      - Unlimited investment
+      - Stay personally involved
+      - Focus on justice with passion
+  text: At the end of the day, this isn't just about winning a case for us – it's about helping our neighbors get their lives back. We've seen how hard good people work to build a life worth living, and we won't let anyone take that away.
+  good:
+    heading: You’re our kind of person when...
+    lists:
+      - heading: You are...
+        items:
+          - text: Hardworking and honest
+          - text: Patient with the process
+          - text: Ready to stand up for yourself
+          - text: Looking for a true partner
+      - heading: You’re want...
+        items:
+          - text: To fight for what’s right
+          - text: Someone who understands you
+          - text: A neighbor in your corner
+          - text: Justice more than revenge
+          - text: To get back to the life you love
+      - heading: You believe...
+        items:
+          - text: Your case deserves real attention
+          - text: Wrongs must be righted
+          - text: Good people deserve good help
+          - text: Hard work should be respected
+          - text: In standing up for what's right
+    postscript:
+      heading: If this sounds like you, let’s talk.
+      text: >-
+        We take on fewer cases because true passion can't be mass-produced. Let's talk about your case and see if we're meant to fight this battle together.
+      button_text: Schedule Your Free Consultation
+      url: /contact
+  bad:
+    heading: We’re probably not your lawyers if...
+    lists:
+      - heading: You’re...
+        items:
+          - text: Looking for quick money
+          - text: Unwilling to trust the process
+          - text: Hard to reach or work with
+          - text: Just seeking revenge
+          - text: Expecting overnight results
+      - heading: You want...
+        items:
+          - text: A payday above all else
+          - text: To avoid any court appearances
+          - text: Minimal personal involvement
+          - text: To handle things yourself
+          - text: The easy way out
+      - heading: You need...
+        items:
+          - text: Family law help (divorce, custody)
+          - text: Criminal defense
+          - text: Real estate closings
+          - text: Estate planning
+          - text: Landlord/tenant resolution
+type: why-we-do-what-we-do

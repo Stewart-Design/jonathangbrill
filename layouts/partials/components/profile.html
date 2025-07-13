@@ -1,26 +1,38 @@
-<main id="topper" class="pt-6">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-7 mb-5 mb-lg-0">
-        <div class="">
-          <h1 class="display-5 mb-4">{{ .Params.profile.heading | markdownify }}</h1>
-          {{ if .Params.profile.text }}
-            <div class="mb-4 pb-2 lead">{{ .Params.profile.text | markdownify }}</div>
+{{ with .Site.Data.why_we_do_what_we_do.profile }}
+  <main id="topper" class="pt-6">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7 mb-5 mb-lg-0">
+          <div class="">
+            <h1 class="display-5 mb-4">{{ .heading | markdownify }}</h1>
+            {{ if .text }}
+              <div class="mb-4 pb-2 lead">{{ .text | markdownify }}</div>
+            {{ end }}
+            {{ if .cta }}
+              {{ partial "generic/button" (dict "button" .cta) }}
+            {{ end }}
+          </div>
+        </div>
+        <div class="col-lg-4 ms-lg-auto">
+          
+          {{ $alt := "" }}
+          {{ $src := .image.src }}
+          {{ $image := "" }}
+          {{/*  Get the image, either from its remote or local source  */}}
+          {{ if hasPrefix $src "http"}}
+            {{ $image = resources.GetRemote $src }}
+          {{ else }}
+            {{ $image = resources.Get $src }}
           {{ end }}
-          {{ if .Params.profile.cta }}
-            {{ partial "generic/button" (dict "button" .Params.profile.cta) }}
+      
+          {{/* Resize images and add them to a variable  */}}
+          {{ if and $image (ne $image.MediaType.SubType "svg") }}
+            {{ $src = ($image.Fit (printf "%dx%d webp" 640 960)).RelPermalink }}
           {{ end }}
+          
+          <img class="img-fluid" src="{{ $src }}" alt="{{ .image.alt }}" />
         </div>
       </div>
-      <div class="col-lg-4 ms-lg-auto">
-        {{ $image := "" }}
-        {{ $alt := "" }}
-        {{ if .Params.profile.image }}
-          {{ $image = resources.Get .Params.profile.image.src }}
-          {{ $image = $image.RelPermalink }}
-        {{ end }}
-        <img class="img-fluid" src="{{ $image }}" alt="{{ $alt }}" />
-      </div>
     </div>
-  </div>
-</main>
+  </main>
+{{ end }}

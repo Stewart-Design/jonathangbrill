@@ -68,6 +68,16 @@ $container-max-widths: (
   xxl: 1320px
 );
 
+// Z-index for vignetting. slash, grid
+$jgb-z-index-content: 3 !default;
+$jgb-z-index-breadcrumbs: 990 !default;
+$jgb-z-index-primary-nav: 1000 !default; // NOTE: Aligns with Bootstrap Dropdowns
+$jgb-z-index-max: 9999 !default;
+$jgb-z-index-grid: 0 !default;
+$jgb-z-index-slash: -1 !default;
+$jgb-z-index-angle-container: -1 !default;
+$jgb-z-index-vignetting: 1 !default;
+
 $enable-negative-margins: true;
 
 $global-important: !important;

@@ -1,7 +1,7 @@
-{{ with .Params.worth_it }}
-  <section class="py-6 text-center">
+{{ with .Site.Data.why_we_do_what_we_do.worth_it }}
+  <section aria-labelledby="worth-it-label" class="py-6 text-center">
     <div class="container">
-      <h2 class="display-5">{{ .heading }}</h2>
+      <h2 id="worth-it-label" class="display-5">{{ .heading }}</h2>
       <div class="row mt-5 gx-md-5">
         <div class="col-md-6 mb-5">
           <div class="bg-light p-4 p-lg-5 h-100 rounded-4">
@@ -23,7 +23,7 @@
         </div>
       </div>
       <div class="row gx-md-5">
-        <div class="col-md-4 mb-5 mb-md-0">
+        <div class="col-lg-4 mb-5 mb-lg-0">
           <div class="bg-light p-4 p-lg-5 h-100 rounded-4">
             {{ if .passion.icon }}
               <span class="fa-sharp fa-{{ .passion.icon }} text-red display-3 mb-4"></span>
@@ -32,7 +32,7 @@
             <p class="small">{{ .passion.text }}</p>
           </div>
         </div>
-        <div class="col-md-4 mb-5 mb-md-0">
+        <div class="col-lg-4 mb-5 mb-lg-0">
           <div class="bg-light p-4 p-lg-5 h-100 rounded-4">
             {{ if .preparation.icon }}
               <span class="fa-sharp fa-{{ .preparation.icon }} text-red display-3 mb-4"></span>
@@ -41,7 +41,7 @@
             <p class="small">{{ .preparation.text }}</p>
           </div>
         </div>
-        <div class="col-md-4 mb-5 mb-md-0">
+        <div class="col-lg-4 mb-5 mb-lg-0">
           <div class="bg-light p-4 p-lg-5 h-100 rounded-4">
             {{ if .persistence.icon }}
               <span class="fa-sharp fa-{{ .persistence.icon }} text-red display-3 mb-4"></span>

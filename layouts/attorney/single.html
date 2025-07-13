@@ -1,4 +1,6 @@
 {{ define "main" }}
+  {{ $src := "" }}
+  {{ partial "header.html" (dict "title" .Title "position" .Params.position) }}
   <main class="pt-6 pb-7">
     <div class="container">
       <div class="row">
@@ -7,66 +9,90 @@
             <div class="row">
               <div class="col-7">
                 <h2 class="archivo-black-regular h3">Contact Info</h2>
-                <p class="mb-0"><span class="fa-solid fa-location-dot"></span> <span class="visually-hidden">location:</span> {{ .Params.location }}</p>
-                <p class="mb-0"><span class="fa-solid fa-phone"></span> <span class="visually-hidden">Phone:</span> <a href="tel:{{ .Params.phone | urlize }}">{{ .Params.phone }}</a></p>
-                <p class="mb-0"><span class="fa-solid fa-fax"></span> <span class="visually-hidden">Fax:</span> {{ .Params.fax }}</p>
-                <p class="mb-0"><span class="fa-solid fa-envelope"></span> <span class="visually-hidden">Email:</span> <a href="mailto:{{ .Params.email }}">Email</a></p>
+                {{ if .Params.location }}
+                  <p class="mb-0"><span class="fa-solid fa-location-dot"></span> <span class="visually-hidden">location:</span> {{ .Params.location }}</p>
+                {{ end }}
+                {{ if .Params.phone }}
+                  <p class="mb-0"><span class="fa-solid fa-phone"></span> <span class="visually-hidden">Phone:</span> <a href="tel:{{ .Params.phone | urlize }}">{{ .Params.phone }}</a></p>
+                {{ end }}
+                {{ if .Params.fax }}
+                  <p class="mb-0"><span class="fa-solid fa-fax"></span> <span class="visually-hidden">Fax:</span> {{ .Params.fax }}</p>
+                {{ end }}
+                {{ if .Params.email }}
+                  <p class="mb-0"><span class="fa-solid fa-envelope"></span> <span class="visually-hidden">Email:</span> <a href="mailto:{{ .Params.email }}">Email</a></p>
+                {{ end }}
               </div>
               <div class="col-5">
-                <img class="img-fluid rounded-1" src="https://placehold.co/400" />
+                {{ if and .Params.image .Params.image.src }}
+                  {{ $src = resources.Get .Params.image.src }}
+                  <img class="img-fluid rounded-1" src="{{ $src.RelPermalink }}" alt="Portrait of {{ .Title }}" />
+                {{ end }}
               </div>
             </div>
           </div>
-          <div class="jgb-main-content libre-baskerville-regular lh-lg">
-            {{ .Content }}
-          </div>
-          <div class="row mt-5 border-top border-1 border-black-50 pt-4">
-            <div class="col-6">
-              <h2 class="h4 archivo-black-regular">Areas of Practice</h2>
+          {{ if .Params.body }}
+            <div class="jgb-main-content libre-baskerville-regular lh-lg">
+              {{ .Params.body | markdownify }}
             </div>
-            <div class="col-6">
-              <ul>
-                {{ range .Params.areas_of_practice }}
-                  <li>{{ . }}</li>
-                {{ end }}
-              </ul>
-            </div>
-          </div>
-          <div class="row mt-5 border-top border-1 border-black-50 pt-4">
-            <div class="col-6">
-              <h2 class="h4 archivo-black-regular">Bar Admission</h2>
-            </div>
-            <div class="col-6">
-              <p>
-                {{ .Params.bar_admission }}
-              </p>
-            </div>
-          </div>
-          <div class="row mt-5 border-top border-1 border-black-50 pt-4">
-            <div class="col-6">
-              <h2 class="h4 archivo-black-regular">Education</h2>
-            </div>
-            <div class="col-6">
-              {{ range .Params.education }}
-                <p><strong>{{ .school }}</strong>, {{ .location }}</p>
+          {{ end }}
+
+          {{ if .Params.areas_of_practice }}
+            <div class="row mt-5 border-top border-1 border-black-50 pt-4">
+              <div class="col-6">
+                <h2 class="h4 archivo-black-regular">Areas of Practice</h2>
+              </div>
+              <div class="col-6">
                 <ul>
-                  {{ range .items }}
+                  {{ range .Params.areas_of_practice }}
                     <li>{{ . }}</li>
                   {{ end }}
                 </ul>
-              {{ end }}
+              </div>
             </div>
-          </div>
-          <div class="row mt-5 border-top border-1 border-black-50 pt-4">
-            <div class="col-6">
-              <h2 class="h4 archivo-black-regular">Litigation Percentage</h2>
+          {{ end }}
+          {{ if .Params.bar_admission }}
+            <div class="row mt-5 border-top border-1 border-black-50 pt-4">
+              <div class="col-6">
+                <h2 class="h4 archivo-black-regular">Bar Admission</h2>
+              </div>
+              <div class="col-6">
+                <p>
+                  {{ .Params.bar_admission }}
+                </p>
+              </div>
             </div>
-            <div class="col-6">
-              <p>
-                {{ .Params.litigation_percentage }}
-              </p>
+          {{ end }}
+          {{ if .Params.education }}
+            <div class="row mt-5 border-top border-1 border-black-50 pt-4">
+              <div class="col-6">
+                <h2 class="h4 archivo-black-regular">Education</h2>
+              </div>
+              <div class="col-6">
+                {{ range .Params.education }}
+                  <p><strong>{{ .school }}</strong>, {{ .location }}</p>
+                  {{ if .items }}
+                    <ul>
+                      {{ range .items }}
+                        <li>{{ . }}</li>
+                      {{ end }}
+                    </ul>
+                  {{ end }}
+                {{ end }}
+              </div>
             </div>
-          </div>
+          {{ end }}
+          {{ if .Params.litigation_percentage }}
+            <div class="row mt-5 border-top border-1 border-black-50 pt-4">
+              <div class="col-6">
+                <h2 class="h4 archivo-black-regular">Litigation Percentage</h2>
+              </div>
+              <div class="col-6">
+                <p>
+                  {{ .Params.litigation_percentage }}
+                </p>
+              </div>
+            </div>
+          {{ end }}
         </div>
         <div class="col-md-4">
           {{ partial "section-menu" . }}

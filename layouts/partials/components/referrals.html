@@ -1,0 +1,11 @@
+<section aria-labelledby="referrals-label" class="py-6 text-center bg-light mt-6">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-xl-8 mx-lg-auto">
+        <h2 id="referrals-label" class="display-5">{{ .heading }}</h2>
+        <p class="lead fs-3">{{ .subheading }}</p>
+        {{ .text | markdownify }}
+      </div>
+    </div>
+  </div>
+</section>

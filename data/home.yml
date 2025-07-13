@@ -1,0 +1,116 @@
+title: 'Home'
+alt_title:
+hero:
+  heading: We represent good people, _our_ people.
+  lead: >-
+    We are injury lawyers that bring a unique approach to helping people. We grew up around hardworking people who did whatever it took to support their families. Those people taught us grit, determination, and the importance of standing up for what's right - values we bring to our law practice every day. When someone is injured or mistreated, they deserve a lawyer who will work as hard for them as they would for their own family. That’s what we do. That’s what makes us unique.
+  cta:
+    text: Share your story with us.
+    url: "#footer"
+  image:
+    src: /img/IMG_4030-Edit.jpg
+    alt: Hampshire County Courthouse
+    caption: Proud to Practice in Hampshire County, WV
+brill_intro:
+  heading: For us, it’s personal.
+  text: >
+    We focus on helping people who’ve been seriously injured – whether it’s from a truck wreck, car wreck, a dangerous property condition, or other injury. A lot of our clients are just regular folks trying to recover and get back to work, get back to supporting their families, but insurance companies don’t always treat them fairly. That’s where we come in. We walk with our clients every step of the way – handling all aspects of the case so that they can focus on healing. We don’t get paid unless we recover, and we work every case like it’s personal – because to our clients, it is. 
+
+    
+    We pride ourselves on being a boutique law firm from West Virginia and going toe-to-toe and winning against the biggest law firms in the country. We protect everything you've worked so hard to build and get you back to the life you love.
+  signature:
+    src: /img/signature.webp
+    alt: Jonathan G. Brill signature
+    text: Jonathan G. Brill
+  ctas:
+    - text: Our story
+      url: /meet-us
+    - text: Why we do what we do
+      url: /why-we-do-what-we-do
+testimonials:
+  - quote: He cares about the people in the community and providing them with quality representation.
+    person: Jacques Williams, Partner
+    label: Hamstead, Williams, and Shook
+  - quote: He is very true to his word. HE LISTENS and treats his clients with much respect.
+    person: Former Client
+    label:
+factoids:
+  - icon: shield-halved
+    fact: 20 Years
+    text: Working Hard for Our People
+  - icon: family
+    fact: 1,000+ Families
+    text: Good People Helped Since 2010
+  - icon: gavel
+    fact: All 55 Counties
+    text: Served across West Virginia
+  - icon: money-bills
+    fact: Results
+    text: Millions recovered / Largest Verdict in Hampshire County
+services:
+  heading: Personal Injury Law
+  items:
+    - heading: Truck Wrecks
+      icon: truck
+      text: When someone’s been hit by a commercial truck, the damage is often life-changing – and the legal fight can be just as tough. Trucking companies and their insurers move fast to protect themselves, but we move faster. We know how to dig into logbooks, black box data, and federal safety violations to hold these companies accountable.
+      url: /practice-areas/car-truck-wrecks
+    - heading: Car Wrecks
+      icon: car-burst
+      text: After a car wreck, everything changes in an instant – medical bills pile up, you’re missing work, and the insurance company is focused on paying as little as possible. We pride ourselves on stepping in to make sure our clients don’t get pushed around. We gather the evidence to build your case from day one so that you can focus on healing.
+      url: /practice-areas/car-truck-wrecks
+    - heading: Insurance Bad Faith
+      icon: file-circle-xmark
+      text: Sometimes the fight isn’t with the other driver – it’s with your own insurance company. When folks pay their premiums and get the runaround after a claim, that not just frustrating – it’s wrong. We frequently take on insurance companies that act in bad faith, delay payments, or deny valid claims.
+      url: /practice-areas/insurance-bad-faith
+    - heading: Wrongful Death
+      icon: tombstone-blank
+      text: Nothing is harder than losing someone you love – especially when it didn’t have to happen. In wrongful death cases, we stand with families who are grieving and looking for answers. We dig deep to discover what really happened, hold the responsible parties accountable, and fight to make sure the family is financially protected moving forward.
+      url: /practice-areas/wrongful-death
+  footnote:
+    heading: Can’t find your case?
+    text: We also handle all types of ‘bad cases’ like X, Y, Z…
+good_fit:
+  heading: Is your case a good fit?
+  intro: We are particular about the cases we take on so we can fight harder for the people we serve. Let's talk about your case and see if we're meant to fight this battle together. If it sounds like there may be a fit, let's have an honest conversation about your case.
+  good:
+    heading: We’re a good fit when...
+    lists:
+      - heading: You want...
+        items:
+          - text: Justice over quick results
+          - text: Someone who will stand with you
+          - text: To get back to the life you love
+          - text: To make sure this never happens to others
+      - heading: You’re ready...
+        items:
+          - text: To be involved in your case
+          - text: To share your full story
+          - text: To stand up for what’s right
+          - text: To trust the process
+      - heading: Your case involves...
+        items:
+          - text: Clear wrongdoing by someone else
+          - text: Real harm (physical, financial, emotional)
+          - text: Evidence to support your story
+          - text: Personal injury or insurance disputes
+  bad:
+    heading: We may not be the right fit if...
+    lists:
+      - heading: You’re looking for...
+        items:
+          - text: Quick settlement
+          - text: Minimal personal involvement
+          - text: Overnight results
+          - text: Revenge above justice
+      - heading: You need help with...
+        items:
+          - text: Family law (divorce, custody)
+          - text: Criminal defense
+          - text: Real estate closings
+          - text: Estate planning
+          - text: Landlord issues
+referrals:
+  heading: Attorney referrals
+  subheading: When the case matters, others lawyers call us. 
+  text: >-
+    We’re proud to be the firm other attorneys turn to when their clients need serious help. Whether they are looking for a trusted referral or a team to take the lead on a high-stakes case, we’re known for being straightforward, strategic, and committed to results. We treat every referral like a reflection of the lawyer who sent the case our way – and we work hard to make them proud that they called us. 

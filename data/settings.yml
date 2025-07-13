@@ -1,21 +1,21 @@
-description:
+description: Personal Injury Law
 featured_image: null
 google_analytics_id:
 site_menu:
-  - menu_item: Why we fight
-    url: /why-we-fight
-  - menu_item: How we help
-    url: /how-we-help
+  - menu_item: Why we do what we do
+    url: /why-we-do-what-we-do
   - menu_item: Practice areas
     url: /practice-areas
   - menu_item: Meet us
     url: /meet-us
-  - menu_item: Get in touch
-    url: /get-in-touch
+  - menu_item: FAQ
+    url: /faq
+  - menu_item: Contact
+    url: /contact
 practice_areas_menu:
-  - menu_item: Car Accidents
+  - menu_item: Car / Truck Wrecks
     icon: car-burst
-    url: /practice-areas/car-accidents
+    url: /practice-areas/car-truck-wrecks
   - menu_item: Medical Malpractice
     icon: mobile
     url: /practice-areas/medical-malpractice
@@ -32,11 +32,11 @@ practice_areas_menu:
     icon: triangle-exclamation
     url: /practice-areas/sexual-harassment
 postscript:
-  heading: Get the help you deserve.
-  button_text: "Share your story–it’s totally free."
-  url:
+  heading: We’re here to help the people we care about.
+  button_text: "Share your story with us."
+  url: /contact
 footer_copy:
-phone: (866) 213-2824
+phone: (304) 822-7110
 email:
   title: 
   url: 

@@ -1,30 +1,52 @@
-{{ with .Params.fighting }}
-  {{ $src := "" }}
-  {{ $alt := "" }}
-  <section class="" aria-labelledby="fighting-label">
-    <div class="container">
-      <div class="row gx-5">
-        <div class="col-md-6 mb-4 mb-md-0">
-          {{ if .image }}
-            {{ if .image.alt }}
-              {{ $alt = .image.alt }}
+{{ $order := "" }}
+{{ with .Site.Data.meet_us.fighting }}
+  <section class="" aria-labelledby="Why We Fight">
+    <div class="container mt-n6">
+      {{ range $i, $_ := . }}
+        {{ $src := "" }}
+        {{ $alt := "" }}
+        {{ if not ( modBool $i 2 ) }}
+          {{ $order = "order-lg-1" }}
+        {{ else }}
+          {{ $order = "order-lg-3" }}
+        {{ end }}
+        <div class="row gx-lg-5 mt-6">
+          <div class="col-md-6 mb-4 mb-md-0 {{ $order }}">
+            {{ if .image }}
+              {{ if .image.alt }}
+                {{ $alt = .image.alt }}
+              {{ end }}
+              {{ if .image.src }}
+                {{ $src = resources.Get .image.src }}
+                {{ $image := "" }}
+                {{/*  Get the image, either from its remote or local source  */}}
+                {{ if hasPrefix $src "http"}}
+                  {{ $image = resources.GetRemote $src }}
+                {{ else }}
+                  {{ $image = resources.Get $src }}
+                {{ end }}
+            
+                {{/* Resize images and add them to a variable  */}}
+                {{ if and $image (ne $image.MediaType.SubType "svg") }}
+                  {{ $src = ($image.Fit (printf "%dx%d webp" 960 640)).RelPermalink }}
+                {{ end }}
+                <img class="img-fluid" loading="lazy" src='{{ $src }}' alt="{{ $alt }}" />
+              {{ end }}
             {{ end }}
-            {{ if .image.src }}
-              {{ $src = resources.Get .image.src }}
-              <img class="img-fluid" loading="lazy" src='{{ ( $src.Fill "960x640 webp Center" ).RelPermalink }}' alt="{{ $alt }}" />
-            {{ end }}
-          {{ end }}
-        </div>
-        <div class="col-md-6">
-          <h2 class="h1 mb-4">{{ .heading }}</h2>
-          <div class="small">
-            <div class="mb-4">
-              {{ .text | markdownify }}
-            </div>
-            {{ partial "generic/button" (dict "button" .cta) }}
           </div>
+          <div class="col-md-6 order-lg-2">
+            <h2 class="h1 mb-4">{{ .heading }}</h2>
+            <div class="small">
+              {{ if .text }}
+                <div class="mb-4">
+                  {{ .text | markdownify }}
+                </div>
+              {{ end }}
+              {{ partial "generic/button" (dict "button" .cta) }}
+            </div>
+          </div>      
         </div>
-      </div>
+      {{ end }}
     </div>
   </section>
 {{ end }}

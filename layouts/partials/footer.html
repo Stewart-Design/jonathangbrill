@@ -1,34 +1,62 @@
 {{ $page := . }}
 {{ $backgroundImage := "" }}
+{{ partial "components/cta" . }}
+
 {{ with site.Data.footer }}
+
+  {{ $src := .background_image }}
+
   {{ if .background_image }}
-    {{ $backgroundImage = resources.Get .background_image.src }}
-    {{ $backgroundImage = $backgroundImage.RelPermalink }}
+    {{ $image := "" }}
+    {{/*  Get the image, either from its remote or local source  */}}
+    {{ if hasPrefix $src "http"}}
+      {{ $image = resources.GetRemote $src }}
+    {{ else }}
+      {{ $image = resources.Get $src }}
+    {{ end }}
+
+    {{/* Resize images and add them to a variable  */}}
+    {{ if and $image (ne $image.MediaType.SubType "svg") }}
+      {{ $src = ($image.Fit (printf "%dx%d webp" 1920 1080)).RelPermalink }}
+    {{ end }}
   {{ end }}
+
   <footer id="footer">
-    <div class="py-7 bg-dark text-white" style="background-image: url({{ $backgroundImage }}); background-position: center; background-size: cover;">
-      <div class="container">
+    <div class="py-7 bg-dark text-white jgb-bg-blend-mode-luminosity" style="background-image: url({{ $src }}); background-position: center; background-size: cover;">
+      <div class="container jgb-z-index-content">
         <div class="row">
           <div class="col-md-5 col-xl-4 me-md-auto mb-5 mb-xl-0">
-            <div class="">
-              <p class="lead mb-5">{{ .contact_message }}</p>
-            </div>
-            <div class="mb-5">
+            {{ if .contact_message }}
+              <div class="">
+                <p class="lead mb-5">{{ .contact_message }}</p>
+              </div>
+            {{ end }}
+            <div class="mb-4">
               <h2 class="h4 mb-3">Contact Us</h2>
               <address>
-                <span class="d-block"><strong>{{ .address_first_line }}</strong></span>
-                {{ range .address }}
-                  <span class="d-block">{{ . }}</span>
+                {{ if .address_first_line }}
+                  <span class="d-block"><strong>{{ .address_first_line }}</strong></span>
+                {{ end }}
+                {{ if .address }}
+                  {{ range .address }}
+                    <span class="d-block">{{ .text }}</span>
+                  {{ end }}
                 {{ end }}
               </address>
-              <ul class="list-unstyled">
-                {{ range .phone }}
-                  <li><strong>{{ .label }}:</strong> <a class="text-white" href="tel:{{ .number | urlize }}">{{ .number }}</a></li>
-                {{ end }}
-              </ul>
+              {{ if .phone }}
+                <ul class="list-unstyled">
+                  {{ range .phone }}
+                    <li><strong>{{ .label }}:</strong> <a class="text-white" href="tel:{{ .number | urlize }}">{{ .number }}</a></li>
+                  {{ end }}
+                </ul>
+              {{ end }}
             </div>
             {{ if .map_link }}
               {{ partial "generic/button" (dict "button" .map_link) }}
+            {{ end }}
+            <h2 class="h4 mt-5 mb-3">Follow Us</h2>
+            {{ range .social_media_accounts }}
+              <a href="{{ .url }}" class="text-decoration-none text-white me-2"><span class="fa-brands fa-{{ .icon }}"></span></a>
             {{ end }}
           </div>
           {{ if ne $page.Title "Get in touch" }}
@@ -37,7 +65,7 @@
                 <h2 class="mb-4">{{ .form_heading }}</h2>
                 <p class="lead">{{ .form_intro }}</p>
                 <p>{{ .form_instructions | markdownify }}</p>
-                {{ partial "components/contact-form" . }}
+                {{ partial "components/contact-form" (dict "linkText" "text-white") }}
               </div>
             </div>
           {{ end }}
@@ -46,8 +74,14 @@
     </div>
     <div class="bg-light py-6">
       <div class="container small">
-        <p class="mb-1">&copy; {{ now.Year }} Jonathan G. Brill, PLLC All Rights Reserved</p>
-        <p><a class="" href="/disclaimer">Disclaimer</a> | <a class="" href="/privacy">Privacy Policy</a></p>
+        <p class="mb-1">&copy; {{ now.Year }} Jonathan G. Brill, PLLC. All Rights Reserved</p>
+        {{ if .links }}
+          <p>
+            {{ range $k, $_ := .links }}
+              {{ if $k }} | {{ end }}<a class="" href="{{ .url }}">{{ .text }}</a>
+            {{ end }}
+          </p>
+        {{ end }}
       </div>
     </div>
   </footer>

@@ -13,6 +13,10 @@
   {{ $description = site.Data.settings.description }}
 {{ end }}
 
+{{ if .Params.meta_description }}
+  {{ $description = .Params.meta_description }}
+{{ end }}
+
 {{ if site.Data.settings.featured_image }}
   {{ $featuredImg = site.Data.settings.featured_image }}
 {{ end }}

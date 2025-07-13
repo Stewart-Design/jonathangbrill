@@ -5,6 +5,344 @@ media_folder: assets/img
 public_folder: /img
 publish_mode: editorial_workflow
 collections:
+  - label: "Landing Pages"
+    name: "landingPages"
+    files:
+      - label: "Home"
+        name: "home"
+        file: "data/home.yml"
+        create: false
+        editor:
+          preview: false
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Meta Description, name: meta_description, widget: text, required: false}
+          - label: Hero
+            name: hero
+            widget: object
+            fields:
+              - {label: Heading, name: heading, widget: markdown}
+              - {label: Lead, name: lead, widget: text}
+              - label: Call to Action
+                name: cta
+                widget: object
+                fields:
+                  - {label: Text, name: text, widget: string}
+                  - {label: URL, name: url, widget: string}
+              - label: Image
+                name: image
+                widget: object
+                fields:
+                  - {label: SRC, name: src, widget: image}
+                  - {label: Alt Text, name: alt, widget: string, required: false}
+                  - {label: Caption, name: caption, widget: text, required: false}
+          - label: Intro
+            name: brill_intro
+            widget: object
+            fields:
+              - {label: Heading, name: heading, widget: string}
+              - {label: Text, name: text, widget: markdown}
+              - label: Signature
+                name: signature
+                widget: object
+                fields:
+                  - {label: SRC, name: src, widget: image}
+                  - {label: Alt Text, name: alt, widget: string}
+                  - {label: Text, name: text, widget: string}
+              - label: CTAs
+                name: ctas
+                widget: list
+                fields:
+                  - {label: Text, name: text, widget: string}
+                  - {label: URL, name: url, widget: string}
+          - label: Testimonials
+            name: testimonials
+            widget: list
+            fields:
+              - {label: Quote, name: quote, widget: text}
+              - {label: Person, name: person, widget: string}
+              - {label: Label, name: label, widget: string}
+          - label: Factoids
+            name: factoids
+            widget: list
+            fields:
+              - {label: Icon, name: icon, widget: string}
+              - {label: Fact, name: fact, widget: string}
+              - {label: Text, name: text, widget: string}
+          - label: Services
+            name: services
+            widget: object
+            fields:
+              - {label: Heading, name: heading, widget: string}
+          - label: Good Fit
+            name: good_fit
+            widget: object
+            fields:
+              - {label: Heading, name: heading, widget: string}
+              - {label: Intro, name: intro, widget: text}
+              - label: Good
+                name: good
+                widget: object
+                fields:
+                  - label: Lists
+                    name: lists
+                    widget: list
+                    fields:
+                      - {label: Heading, name: heading, widget: string}
+                      - label: Items
+                        name: items
+                        widget: list
+                        fields:
+                          - {label: Text, name: text, widget: string, required: false}
+              - label: Bad
+                name: bad
+                widget: object
+                fields:
+                  - label: Lists
+                    name: lists
+                    widget: list
+                    fields:
+                      - {label: Heading, name: heading, widget: string}
+                      - label: Items
+                        name: items
+                        widget: list
+                        fields:
+                        - {label: Text, name: text, widget: string, required: false}
+      - label: "Why we do what we do"
+        name: "why-we-fight"
+        file: "data/why_we_do_what_we_do.yml"
+        create: false
+        editor:
+          preview: false
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Alternate Title, name: alt_title, widget: string, required: false}
+          - {label: Meta Description, name: meta_description, widget: text, required: false}
+          - label: Profile
+            name: profile
+            widget: object
+            fields:
+              - label: Image
+                name: image
+                widget: object
+                fields:
+                  - {label: SRC, name: src, widget: image}
+                  - {label: Alt Text, name: alt, widget: string}
+              - {label: Heading, name: heading, widget: string}
+              - {label: Text, name: text, widget: text}
+              - label: Call to Action
+                name: cta
+                widget: object
+                fields:
+                  - {label: Text, name: text, widget: string}
+                  - {label: URL, name: url, widget: string}
+          - label: Worth It
+            name: worth_it
+            widget: object
+            fields:
+              - {label: Heading, name: heading, widget: string}
+              - label: Mission
+                name: mission
+                widget: object
+                fields:
+                  - {label: Heading, name: heading, widget: string}
+                  - {label: Icon, name: icon, widget: string}
+                  - {label: Text, name: text, widget: text}
+              - label: Vision
+                name: vision
+                widget: object
+                fields:
+                  - {label: Heading, name: heading, widget: string}
+                  - {label: Icon, name: icon, widget: string}
+                  - {label: Text, name: text, widget: text}
+              - label: Passion
+                name: passion
+                widget: object
+                fields:
+                  - {label: Heading, name: heading, widget: string}
+                  - {label: Icon, name: icon, widget: string}
+                  - {label: Text, name: text, widget: text}
+              - label: Preparation
+                name: preparation
+                widget: object
+                fields:
+                  - {label: Heading, name: heading, widget: string}
+                  - {label: Icon, name: icon, widget: string}
+                  - {label: Text, name: text, widget: text}
+              - label: Persistence
+                name: persistence
+                widget: object
+                fields:
+                  - {label: Heading, name: heading, widget: string}
+                  - {label: Icon, name: icon, widget: string}
+                  - {label: Text, name: text, widget: text}
+          - label: Quote
+            name: quote
+            widget: object
+            fields:
+              - {label: Text, name: text, widget: text}
+              - {label: Author, name: author, widget: string}
+              - {label: Title, name: title, widget: string}
+          - label: Alternating Grid
+            name: alternating_grid
+            widget: list
+            fields:
+              - {label: Heading, name: heading, widget: string}
+              - {label: Subheading, name: subheading, widget: string}
+              - {label: Text, name: text, widget: markdown}
+              - label: Image
+                name: image
+                widget: object
+                fields:
+                  - {label: SRC, name: src, widget: image}
+                  - {label: Alt Text, name: alt, widget: string}
+              - label: Call to Action
+                name: cta
+                widget: object
+                fields:
+                  - {label: Text, name: text, widget: string}
+                  - {label: URL, name: URL, widget: string}
+      - label: "How we help"
+        name: "how-we-help"
+        file: "data/how_we_help.yml"
+        create: false
+        editor:
+          preview: false
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Alternate Title, name: alt_title, widget: string, required: false}
+          - {label: Meta Description, name: meta_description, widget: text, required: false}
+          - {label: Content, name: content, widget: markdown}
+      - label: "Practice areas"
+        name: "practice-areas"
+        file: "data/practice_areas.yml"
+        create: false
+        editor:
+          preview: false
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Alternate Title, name: alt_title, widget: string, required: false}
+          - {label: Meta Description, name: meta_description, widget: text, required: false}
+          - {label: Hide from Subnav, name: hide_from_subnav, widget: boolean, required: false}
+          - {label: Weight, name: weight, widget: number, required: false}
+          - {label: Lead, name: lead, widget: text, required: false}
+          - {label: Content, name: content, widget: markdown}
+      - label: "Meet us"
+        name: "meet-us"
+        file: "data/meet_us.yml"
+        create: false
+        editor:
+          preview: false
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Alternate Title, name: alt_title, widget: string, required: false}
+          - {label: Meta Description, name: meta_description, widget: text, required: false}
+          - label: Sidebar Image
+            name: sidebar_img
+            widget: object
+            fields:
+              - {label: SRC, name: src, widget: image, choose_url: false, required: false}
+              - {label: Alt Text, name: alt, widget: string, required: false}
+          - label: Fighting for Good People
+            name: fighting
+            widget: object
+            fields:
+              - label: Image
+                name: image
+                widget: object
+                fields:
+                  - {label: SRC, name: src, widget: image, choose_url: false, required: false}
+                  - {label: Alt Text, name: alt, widget: string, required: false}
+              - {label: Heading, name: heading, widget: string}
+              - {label: Text, name: text, widget: markdown}
+              - label: Call to Action
+                name: cta
+                widget: object
+                fields:
+                  - {label: Text, name: text, widget: string, required: false}
+                  - {label: URL, name: url, widget: string, required: false}
+          - {label: Content, name: content, widget: markdown}
+      - label: "Get in touch"
+        name: "get-in-touch"
+        file: "data/get_in_touch.yml"
+        create: false
+        editor:
+          preview: false
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Meta Description, name: meta_description, widget: text, required: false}
+          - {label: Intro, name: intro, widget: markdown, required: false}
+  - label: "Practice Areas"
+    name: "practice-areas"
+    folder: "content/practice-areas"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - {label: Title, name: title, widget: string}
+      - {label: Meta Description, name: meta_description, widget: text, required: false}
+      - {label: Icon, name: icon, widget: string}
+      - {label: Description, name: description, widget: text}
+      - {label: Lead, name: lead, widget: text, required: false}
+      - {label: Body, name: body, widget: markdown}
+      - {label: Type, name: type, widget: hidden, default: "practice-areas"}
+  - label: "Attorneys"
+    name: "attorneys"
+    folder: "content/meet-us"
+    create: true
+    editor:
+      preview: false
+    fields:
+      - {label: Title, name: title, widget: string}
+      - {label: Meta Description, name: meta_description, widget: text, required: false}
+      - label: Image
+        name: image
+        widget: object
+        fields:
+          - {label: SRC, name: src, widget: image, required: false}
+          - {label: Alt Text, name: alt, widget: string, required: false}
+      - {label: Position, name: position, widget: string, required: false}
+      - {label: Location, name: location, widget: string, required: false}
+      - {label: Phone, name: phone, widget: string, required: false}
+      - {label: Fax, name: fax, widget: string, required: false}
+      - {label: Email, name: email, widget: string, required: false}
+      - label: Areas of Practice
+        name: areas_of_practice
+        widget: list
+        fields:
+          - {label: Text, name: text, widget: string, required: false}
+        required: false
+      - {label: Bar Admission, name: bar_admission, widget: string, required: false}
+      - label: Education
+        name: education
+        widget: list
+        fields:
+          - {label: School, name: school, widget: string, required: false}
+          - {label: Location, name: location, widget: string, required: false}
+          - label: Items
+            name: items
+            widget: list
+            fields:
+              - {label: Text, name: text, widget: string, required: false}
+            required: false
+      - {label: Litigation Percentage, name: litigation_percentage, widget: string, required: false}
+      - {label: Weight, name: weight, widget: number, value_type: int, min: 1, max: 100 }
+      - {label: Body, name: body, widget: markdown, required: false}
+      - {label: Type, name: type, widget: hidden, default: "attorney"}
+  # - label: "Blog"
+  #   name: "blog"
+  #   folder: "content/blog"
+  #   create: true
+  #   editor:
+  #     preview: false
+  #   fields:
+  #     - {label: "Title", name: "title", widget: "string"}
+  #     - {label: "Draft", name: "draft", widget: "boolean"}
+  #     - {label: "Publish Date", name: "date", widget: "datetime"}
+  #     - {label: "Featured Image", name: "featured_image", widget: "image", required: false}
+  #     - {label: "Alt Text", name: "alt_text", widget: "string", required: false}
+  #     - {label: "Body", name: "body", widget: "markdown"}
+  #     - {label: Type, name: type, widget: hidden, default: "blog"}
   - label: "Footer"
     name: "footer"
     create: false
@@ -17,6 +355,37 @@ collections:
         editor:
           preview: false
         fields:
+          - {label: Background Image, name: background_image, widget: image, required: false}
+          - {label: Contact Title, name: contact_title, widget: string}
+          - {label: Contact Message, name: contact_message, widget: text, required: false}
+          - {label: Address 1st Line, name: address_first_line, widget: string, required: false}
+          - label: Address
+            name: address
+            widget: list
+            fields:
+              - {label: Text, name: text, widget: string}
+          - label: Phone
+            name: phone
+            widget: list
+            fields:
+              - {label: Label, name: label, widget: string}
+              - {label: Number, name: number, widget: string}
+          - label: Map Link
+            name: map_link
+            widget: object
+            fields:
+              - {label: Text, name: text, widget: string}
+              - {label: URL, name: url, widget: string}
+            required: false
+          - {label: Form Heading, name: form_heading, widget: string}
+          - {label: Form Intro, name: form_intro, widget: text, required: false}
+          - {label: Form Instructions, name: form_instructions, widget: string, required: false}
+          - label: Links
+            name: links
+            widget: list
+            fields:
+              - {label: Text, name: text, widget: string}
+              - {label: URL, name: url, widget: string}
   - label: "Settings"
     name: "settings"
     create: false
@@ -50,3 +419,25 @@ collections:
             fields:
               - { label: "Title", name: "title", widget: "string", required: false }
               - { label: "URL", name: "url", widget: "string", required: false }
+  - label: "Legal"
+    name: "legal"
+    create: false
+    editor:
+      preview: false
+    files:
+      - label: "Privacy Policy"
+        name: "privacy-policy"
+        file: "content/privacy.md"
+        editor:
+          preview: false
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Content, name: content, widget: markdown}
+      - label: "Disclaimer"
+        name: "disclaimer"
+        file: "content/disclaimer.md"
+        editor:
+          preview: false
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Content, name: content, widget: markdown}

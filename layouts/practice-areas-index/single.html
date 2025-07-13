@@ -1,0 +1,19 @@
+{{ define "main" }}
+  {{ with .Site.Data.practice_areas }}
+    {{ partial "header.html" (dict "title" .title "alt_title" .alt_title) }}
+    <main class="pt-6">
+      <div class="container">
+        <div class="row">
+          
+            <div class="col-md-7 me-md-auto jgb-main-content lh-lg mb-5 mb-md-0">
+              {{ .content | markdownify }}
+            </div>
+          
+          <div class="col-md-4">
+            {{ partial "section-menu" }}
+          </div>
+        </div>
+      </div>
+    </main>
+  {{ end }}
+{{ end }}

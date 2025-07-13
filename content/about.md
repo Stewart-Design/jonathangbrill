@@ -1,10 +1,10 @@
 ---
 title: 'About'
+meta_description:
 date: 2025-01-04T16:52:41-05:00
-draft: false
+draft: true
 content_blocks:
   - name: 
-draft: true
 ---
 
 Jonathan G. Brill, PLLC, is a law firm dedicated to its clients. A successful trial attorney in Houston, Texas, once said, “If you are not emotionally involved, your client is not getting your best effort.” – Joe Jamail.

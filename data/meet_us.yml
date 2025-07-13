@@ -1,0 +1,42 @@
+title: Meet us
+alt_title: Our Story
+type: my-small-town-story
+sidebar_img:
+  src: /img/outside-night.jpg
+  alt: Outside view of law office
+content: >-
+  Life sure has a way of teaching hard lessons. For me, the journey started at 19. At the time, I was attending Fairmont State University. On September 11, 2001, my life, like most other Americans, changed dramatically. I was pulled out of Fairmont State University and sent with my Army unit to Bagram, Afghanistan. My time in the desert offered great reflection and perspective. 
+
+
+  I realized that, growing up in Hampshire County, I had grown up surrounded by the most compassionate, faithful, and hard-working people supporting their families and neighbors. Salt-of-the-earth people who supported their families and communities with calloused hands and pure grit. I didn't appreciate what I had until I left.
+
+
+  Coming back, I developed a passion to get back to my community and make a difference. The practice of law was my ticket to give back. 
+
+
+  After my first year of practice, I opened my own law firm. Seeing good people get taken advantage of because they're from "rural West Virginia" lit a fire in me. 
+
+
+  In 2015, I had the good fortune of meeting and hiring Amanda Greene as a legal assistant while she continued her professional bowling career. Since then, she has become like family. In 2017, Amanda cut back on bowling and enrolled at the West Virginia University College of Law. Since graduating from law school in 2020, she has played an integral part of the practice, as she espouses the same work ethic and values. 
+
+
+  Today, we still treat our clients like family. We purposefully remain a small law firm because having direct connection to our clients is important to us. When someone's worked their whole life to build something and it's threatened – that's not just another case. That's our neighbor's life, their dignity, their future.
+fighting:
+  - heading: Let’s get to work
+    image:
+      src: /img/brill-greene.jpg
+      alt: Farmers standing in a field
+    text: >-
+      We're a small firm by choice, taking on fewer cases so we can fight harder
+      for the people we serve. Based in Romney, West Virginia, we combine hometown
+      heart with big-firm capabilities to help good people protect what they've
+      worked so hard to build.
+
+        - Selective Focus: We accept only 10% of potential cases
+        - All-In Investment: Thousands invested in cases
+        - Trial Ready: Every case prepared for court from day one
+        - Personal Attention: Direct attorney access and regular updates
+        - Hometown Understanding: Deep roots in our community
+    cta:
+      text: Start building your case
+      url: /contact

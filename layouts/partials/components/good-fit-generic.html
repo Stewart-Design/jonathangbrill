@@ -1,0 +1,73 @@
+<section aria-labelledby="fit-label" class="pt-6 text-center">
+  <div class="container">
+    <div class="row mb-5">
+      <div class="col-xl-8 mx-xl-auto">
+        <h2 id="fit-label" class="mb-4 display-6">{{ .heading }}</h2>
+        <div class="row my-5">
+          <div class="col-lg-6 mb-5 mb-lg-0">
+            {{ with .list_a }}
+              <h3 class="h5"><span class="fa-regular fa-circle-x text-danger"></span> {{ .heading }}</h3>
+              <ul class="list-unstyled">
+                {{ range .items }}
+                  <li>{{ . }}</li>
+                {{ end }}
+              </ul>
+            {{ end }}
+          </div>
+          <div class="col-lg-6">
+            {{ with .list_b }}
+              <h3 class="h5"><span class="fa-regular fa-circle-check text-success"></span> {{ .heading }}</h3>
+              <ul class="list-unstyled">
+                {{ range .items }}
+                  <li>{{ . }}</li>
+                {{ end }}
+              </ul>
+            {{ end }}
+          </div>
+        </div>
+        <p>{{ .text | markdownify }}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 mb-5 mb-lg-0">
+        <div class="bg-light rounded-5 p-5 h-100">
+          {{ with .good }}
+            <h3>{{ .heading }}</h3>
+            {{ range .lists }}
+              <h4 class="mt-4">{{ .heading }}</h4>
+              <ul class="list-unstyled">
+                {{ range .items }}
+                  <li class="mb-2"><span class="fa-regular fa-circle-check text-success"></span> {{ .text }}</li>
+                {{ end }}
+              </ul>
+            {{ end }}
+            {{ with .postscript }}
+              <h4 class="mt-5 ">{{ .heading }}</h4>
+              <div class="mb-4">
+                {{ .text | markdownify }}
+              </div>
+              {{ if .button_text }}
+                <a href="{{ .url }}" class="btn btn-primary rounded-pill px-4">{{ .button_text }}</a>
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="bg-light rounded-5 p-5 h-100">
+          {{ with .bad }}
+            <h3>{{ .heading }}</h3>
+            {{ range .lists }}
+              <h4 class="mt-4">{{ .heading }}</h4>
+              <ul class="list-unstyled">
+                {{ range .items }}
+                  <li class="mb-2"><span class="fa-regular fa-circle-x text-danger"></span> {{ .text }}</li>
+                {{ end }}
+              </ul>
+            {{ end }}
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

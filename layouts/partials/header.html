@@ -1,13 +1,18 @@
+{{ $title := "" }}
+{{ if .Title }}
+  {{ $title = .Title }}
+{{ end }}
+{{ if .title }}
+  {{ $title = .title }}
+{{ end }}
+{{ if .alt_title }}
+  {{ $title = .alt_title }}
+{{ end }}
 <header id="topper" class="pt-6">
   <div class="container">
-    <!--
-    {{ partial "breadcrumbs.html" . }}
-     -->
-    <h1 class="display-4 mb-0">{{ .Title }}</h1>
-    {{ if eq .Type "attorney" }}
-      {{ if .Params.position }}
-        <p class="h4">{{ .Params.position }}</p>
-      {{ end }}
+    <h1 class="display-4 mb-0">{{ $title }}</h1>
+    {{ if .position }}
+      <p class="h4">{{ .position }}</p>
     {{ end }}
   </div>
 </header>

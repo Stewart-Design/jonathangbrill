@@ -1,24 +1,25 @@
 ---
 title: Jonathan G. Brill
+meta_description:
 image:
-  src: /img/brill.webp
+  src: /img/brill-jonathan.jpg
   alt:
 position: Principal Attorney
 location: Romney, WV
-phone: (866) 213-2824
+phone: (304) 822-7110
 fax: 304-822-7109
 email: jonathan@jonathangbrill.com
 areas_of_practice:
-  - Personal Injury 70%
-  - Insurance Bad Faith 20%
-  - Real Estate Litigation 10%
+  - Serious Personal Injury
+  - Wrongful Death
+  - Insurance Bad Faith
 bar_admission: West Virginia, 2010
 education:
   - school: West Virginia University College of Law
     location: Morgantown, West
     items:
       - J.D. - 2010
-  - school: Fairmont State University
+  - school: Fairmont State University (B.S. Computer Science)
     location: Fairmont, West Virginia
     items:
       - B.S. - 2007
@@ -26,13 +27,13 @@ education:
       - "Major: Computer Science"
 litigation_percentage: 95% of practice devoted to Litigation
 weight: 10
-draft: true
+body: >-
+  With roots stretching back generations in Hampshire County, Jonathan has recovered millions for good people across West Virginia, building a reputation for turning rural cases into major victories. While often coached to remain emotionally detached from clients and cases, Jonathan follows Texas trial legend Joe Jamail's wisdom: "If you are not emotionally involved, your client is not getting your best effort."
+
+
+  With a strong network across the State, he helps people get the support they need when it matters most – bringing small-town values together with serious legal experience. He takes a selective approach to his cases, focusing his time and energy on standing up for people who’ve been wronged and need someone in their corner.
+
+
+  Beyond the courtroom, Jonathan serves his community as a board member at both Bank of Romney and Eastern West Virginia Community College, believing that helping people means strengthening the communities. Jonathan lives in Yellow Spring with his wife, Aura, and their two children. 
+type: attorney
 ---
-
-Jonathan G. Brill, PLLC, is a law firm dedicated to its clients. A successful trial attorney in Houston, Texas, once said, “If you are not emotionally involved, your client is not getting your best effort.” – Joe Jamail.
-
-Jonathan G. Brill, PLLC, practices Joe’s mantra and becomes emotionally involved with every client. Victims suffering serious or catastrophic injuries at the hands of others need a lawyer willing to relate the client’s situation and aggressively pursue each claim. Often, the only way to rectify the pain and suffering caused by a serious injury is financial compensation. And Jonathan G. Brill, PLLC, pursues every avenue to get the compensation necessary to pay medical bills, replace motor vehicle costs, expenses, lost income, and for pain and suffering.
-
-Experienced, Efficient Personal Injury Representation For Romney, West Virginia, And Hampshire County Clients
-Jonathan G. Brill, PLLC, carefully selects each case to ensure that each client gets the prompt, professional and passionate attention necessary to resolve the claim. Jonathan G. Brill represents clients injured in motor vehicle accidents, truck accidents, construction accidents, workplace accidents, distracted driving accidents, and slip-and-fall accidents. Jonathan also represents victims of crimes, defective products, serious injuries and wrongful death.
-Sometimes, insurance companies refuse to pay for your injuries. Jonathan G. Brill also represents clients battling insurance companies over insurance disputes, insurance bad faith and insurance coverage issues.
