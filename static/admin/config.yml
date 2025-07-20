@@ -227,13 +227,13 @@ collections:
                 widget: object
                 fields:
                   - {label: Heading, name: heading, widget: string}
-                  - {label: Items, name: items, widget: list, default: "Item"}
+                  - {label: Items, name: items, widget: list, default: ["Item"]}
               - label: List B
                 name: list_b
                 widget: object
                 fields:
                   - {label: Heading, name: heading, widget: string}
-                  - {label: Items, name: items, widget: list, default: "Item"}
+                  - {label: Items, name: items, widget: list, default: ["Item"]}
               - {label: Text, name: text, widget: text}
               - label: Good
                 name: good
