@@ -354,7 +354,7 @@ collections:
       - {label: Description, name: description, widget: text}
       - {label: Lead, name: lead, widget: text, required: false}
       - {label: Body, name: body, widget: markdown}
-      - {label: Type, name: type, widget: hidden, default: "practice-areas"}
+      - {label: Type, name: type, widget: hidden, default: ["practice-areas"]}
   - label: "Attorneys"
     name: "attorneys"
     folder: "content/meet-us"
@@ -378,7 +378,7 @@ collections:
       - label: Areas of Practice
         name: areas_of_practice
         widget: list
-        default: "Text"
+        default: ["Text"]
         required: false
       - {label: Bar Admission, name: bar_admission, widget: string, required: false}
       - label: Education
@@ -390,7 +390,7 @@ collections:
           - label: Items
             name: items
             widget: list
-            default: "Text"
+            default: ["Text"]
             required: false
       - {label: Litigation Percentage, name: litigation_percentage, widget: string, required: false}
       - {label: Weight, name: weight, widget: number, value_type: int, min: 1, max: 100 }
