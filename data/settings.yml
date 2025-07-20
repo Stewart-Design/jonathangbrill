@@ -1,6 +1,6 @@
 description: Personal Injury Law
 featured_image: null
-google_analytics_id:
+google_analytics_id: G-S5YR367XYE
 site_menu:
   - menu_item: Why we do what we do
     url: /why-we-do-what-we-do
@@ -12,6 +12,12 @@ site_menu:
     url: /faq
   - menu_item: Contact
     url: /contact
+phone: (304) 822-7110
+postscript:
+  heading: We’re here to help the people we care about.
+  button_text: Share your story with us.
+  url: /contact
+footer_copy: null
 practice_areas_menu:
   - menu_item: Car / Truck Wrecks
     icon: car-burst
@@ -31,12 +37,6 @@ practice_areas_menu:
   - menu_item: Sexual Harassment
     icon: triangle-exclamation
     url: /practice-areas/sexual-harassment
-postscript:
-  heading: We’re here to help the people we care about.
-  button_text: "Share your story with us."
-  url: /contact
-footer_copy:
-phone: (304) 822-7110
 email:
-  title: 
-  url: 
+  ? title
+  ? url
