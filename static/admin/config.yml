@@ -248,7 +248,7 @@ collections:
                       - label: Items
                         name: items
                         widget: list
-                        field:
+                        fields:
                           - {label: Text, name: text, widget: string}
                   - label: Postscript
                     name: postscript
@@ -271,7 +271,7 @@ collections:
                       - label: Items
                         name: items
                         widget: list
-                        field:
+                        fields:
                           - {label: Text, name: text, widget: string}
                     required: false
                   - label: Postscript
